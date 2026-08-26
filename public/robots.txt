@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Block admin/auth routes from crawlers
+Disallow: /profile
+Disallow: /login
+Disallow: /register
+Disallow: /forgot-password
+Disallow: /reset-password
+Disallow: /dashboard
+
+Sitemap: https://stgeorgememorials.com/sitemap.xml

@@ -1,0 +1,164 @@
+<template>
+  <AppLayout>
+    <Head>
+      <title>Custom Headstones in Enoch, Utah — Fort Johnson to Modern Iron County | St. George Memorials</title>
+      <meta name="description" content="Headstones for Enoch, Utah families — first settled in 1851 as Fort Johnson, now a growing Iron County community adjacent to Cedar City. Enoch City Cemetery service and delivery from our St. George shop." />
+      <link rel="canonical" href="https://stgeorgememorials.com/service-areas/enoch" />
+    </Head>
+
+    <section class="bg-evergreen text-white py-14">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-sage-light text-sm font-semibold uppercase tracking-widest mb-3">Iron County · Service Area · 55 minutes north</p>
+        <h1 class="font-serif text-4xl sm:text-5xl font-semibold mb-4">Custom Headstones in Enoch — Fort Johnson to Modern Iron County</h1>
+        <p class="text-white/70 text-lg max-w-3xl">Enoch was first settled in 1851 under the name Fort Johnson — one of the earliest Iron County communities and part of the same pioneer wave that founded Cedar City. Today it's a bedroom community for Cedar City with a rapidly expanding population, and its cemetery reflects both the pioneer roots and the modern growth.</p>
+
+        <div class="mt-8 grid grid-cols-2 sm:grid-cols-4 gap-3 max-w-3xl">
+          <div class="bg-white/5 rounded-xl p-3">
+            <p class="text-xs text-sage-light uppercase tracking-widest">County</p>
+            <p class="text-sm text-white mt-1">Iron</p>
+          </div>
+          <div class="bg-white/5 rounded-xl p-3">
+            <p class="text-xs text-sage-light uppercase tracking-widest">Founded</p>
+            <p class="text-sm text-white mt-1">1851 (Fort Johnson)</p>
+          </div>
+          <div class="bg-white/5 rounded-xl p-3">
+            <p class="text-xs text-sage-light uppercase tracking-widest">Drive Time</p>
+            <p class="text-sm text-white mt-1">~55 minutes</p>
+          </div>
+          <div class="bg-white/5 rounded-xl p-3">
+            <p class="text-xs text-sage-light uppercase tracking-widest">Character</p>
+            <p class="text-sm text-white mt-1">Cedar City suburb, growing</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-stone">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+        <div class="lg:col-span-2 space-y-6">
+
+          <div class="bg-white rounded-2xl border border-stone-dark p-8 prose-custom">
+            <h2>Enoch — From Fort Johnson to Modern Suburb</h2>
+            <p>Enoch's history predates most of the Iron County towns. Fort Johnson was established in 1851 as one of a series of defensive settlements protecting the Iron Mission's pioneer families. The name later changed to Enoch, honoring the biblical patriarch, and the town remained small for over a century — a farming community more than a formal city. That changed in the last thirty years as growth from Cedar City spilled north, and Enoch is now one of the fastest-growing communities in Iron County.</p>
+            <p>The Enoch City Cemetery reflects both eras. Older sections hold the descendants of Fort Johnson pioneers; a major 1996 expansion added modern sections that serve the newer population. We design headstones for both.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-stone-dark p-8">
+            <h2 class="font-serif text-2xl font-semibold text-evergreen mb-2">Cemeteries in and Near Enoch</h2>
+            <p class="text-granite text-sm mb-6">The city cemetery plus Cedar City's several cemetery options adjacent.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link v-for="cem in cemeteries" :key="cem.href" :href="cem.href" class="flex items-center justify-between p-4 rounded-xl border border-stone-dark hover:border-evergreen hover:shadow-sm transition-all group">
+                <div>
+                  <span class="text-sm font-medium text-evergreen group-hover:text-evergreen-light block">{{ cem.name }}</span>
+                  <span class="text-xs text-granite">{{ cem.note }}</span>
+                </div>
+                <svg class="w-4 h-4 text-bronze flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </Link>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-stone-dark p-8 prose-custom">
+            <h2>Enoch City Cemetery — Rules Snapshot</h2>
+            <p>Enoch City Cemetery is administered by the City of Enoch. Because the town sits at Cedar City's elevation (~5,600 feet), freeze-thaw is a real factor and we engineer deeper foundations than the St. George standard. Rules follow the Iron County pattern: sexton advance notice, concrete apron under monuments, section-specific upright vs. flush rules. The 1996 expansion sections are more uniform than the pioneer sections, which have historic sensitivity around new stone placement.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-stone-dark p-8 prose-custom">
+            <h2>Fort Johnson Heritage in Design</h2>
+            <p>Some Enoch families explicitly reference the Fort Johnson founding story on their headstones — a pioneer wagon motif, an 1851 date pairing, or the earliest surname of the family line. It is optional but distinctive. For families in the newer sections, more contemporary designs are common — Cedar City Temple silhouettes, LDS pioneer motifs, or straightforward polished granite uprights with clean lettering.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-stone-dark p-8">
+            <h2 class="font-serif text-2xl font-semibold text-evergreen mb-2">Popular Headstone Styles in Enoch</h2>
+            <p class="text-granite text-sm mb-6">Mixed — Fort Johnson heritage designs for pioneer sections, contemporary for newer sections.</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <Link v-for="type in headstoneTypes" :key="type.href" :href="type.href" class="flex items-center justify-between p-4 rounded-xl border border-stone-dark hover:border-evergreen hover:shadow-sm transition-all group">
+                <span class="text-sm font-medium text-evergreen group-hover:text-evergreen-light">{{ type.name }}</span>
+                <span class="text-xs text-bronze font-semibold">{{ type.price }}</span>
+              </Link>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-stone-dark p-8 prose-custom">
+            <h2>Delivery & Installation to Enoch</h2>
+            <p>Enoch is about 55 minutes north of our St. George shop via I-15, just past Cedar City. We often consolidate Enoch and Cedar City installations on the same trip to reduce freight cost. Because Enoch is at Cedar City's elevation, the same deeper-foundation and freeze-window scheduling considerations apply. Lead time is 10–20 weeks.</p>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-stone-dark p-8">
+            <h2 class="font-serif text-2xl font-semibold text-evergreen mb-6">Frequently Asked Questions — Enoch</h2>
+            <div class="space-y-5">
+              <div v-for="faq in faqs" :key="faq.q">
+                <p class="font-semibold text-evergreen mb-1">{{ faq.q }}</p>
+                <p class="text-sm text-granite leading-relaxed">{{ faq.a }}</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="space-y-6">
+          <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
+            <h3 class="font-serif text-xl font-semibold mb-3">Design an Enoch Memorial</h3>
+            <p class="text-white/70 text-sm mb-5">Free consultation. Deep-foundation engineering for the Iron County elevation.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+          </div>
+          <RelatedLinks :links="related" />
+        </aside>
+
+      </div>
+    </section>
+  </AppLayout>
+</template>
+
+<script setup>
+import { Head, Link } from '@inertiajs/vue3';
+import AppLayout from '@/Layouts/AppLayout.vue';
+import RelatedLinks from '@/Components/RelatedLinks.vue';
+import { useDesignModal } from '@/composables/useDesignModal.js';
+
+const { openModal } = useDesignModal();
+
+const cemeteries = [
+  { name: 'Enoch City Cemetery', note: 'Municipal cemetery with 1996 expansion', href: '/cemeteries/enoch-city-cemetery' },
+  { name: 'Cedar City Cemetery', note: '10 min south, main Iron County municipal', href: '/cemeteries/cedar-city-cemetery' },
+  { name: 'Southern Utah National Cemetery', note: '15 min south, VA-operated', href: '/cemeteries/southern-utah-national-cemetery' },
+  { name: 'Parowan City Cemetery', note: '15 min north, mother town heritage', href: '/cemeteries/parowan-city-cemetery' },
+];
+
+const headstoneTypes = [
+  { name: 'Upright Monuments', price: 'From $1,200', href: '/headstones/upright-monuments' },
+  { name: 'LDS Pioneer Designs', price: 'From $1,300', href: '/headstones/lds-pioneer-headstones' },
+  { name: 'Flat & Flush Markers', price: 'From $500', href: '/headstones/flat-markers' },
+  { name: 'Bronze / VA Markers', price: 'From $900', href: '/headstones/bronze-memorials' },
+  { name: 'Companion Headstones', price: 'From $1,800', href: '/headstones/companion-headstones' },
+  { name: 'Custom Engraving', price: 'Quoted per design', href: '/headstones/custom-engraving' },
+];
+
+const faqs = [
+  {
+    q: 'Why does an Enoch installation take longer than St. George?',
+    a: 'Two reasons: longer freight (55 min each way) and deeper foundations required by the Iron County elevation. Concrete pours are also scheduled around freeze forecasts, adding some timing variability during winter months.',
+  },
+  {
+    q: 'What was Fort Johnson?',
+    a: 'The original 1851 name for Enoch, established as part of the Iron Mission defensive settlement pattern. Some Enoch families still reference the Fort Johnson founding on their headstones.',
+  },
+  {
+    q: 'Can I have a Cedar City Utah Temple engraving on an Enoch headstone?',
+    a: 'Yes. The Cedar City Utah Temple (dedicated 2017) is a common design element for Iron County families and pairs particularly well with jet black granite and laser etching.',
+  },
+  {
+    q: 'Do you handle both Enoch and Cedar City installations?',
+    a: 'Yes. We often schedule them on the same trip to consolidate freight cost. Ask about it in your quote.',
+  },
+];
+
+const related = [
+  { label: 'Enoch City Cemetery Guide', href: '/cemeteries/enoch-city-cemetery' },
+  { label: 'Cedar City Service Area', href: '/service-areas/cedar-city' },
+  { label: 'Parowan Service Area', href: '/service-areas/parowan' },
+  { label: 'LDS Pioneer Headstones', href: '/headstones/lds-pioneer-headstones' },
+  { label: 'Bronze / VA Markers', href: '/headstones/bronze-memorials' },
+  { label: 'All Iron County Cemeteries', href: '/cemeteries' },
+];
+</script>
