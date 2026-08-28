@@ -52,7 +52,7 @@
     </div>
 
     <button type="submit" :disabled="form.processing" class="w-full bg-evergreen hover:bg-evergreen-dark disabled:opacity-60 text-white font-semibold py-3 rounded-lg transition-colors text-sm">
-      {{ form.processing ? 'Sending...' : 'Request a Free Design Proof' }}
+      {{ form.processing ? 'Sending...' : 'Request a Quote' }}
     </button>
   </form>
 </template>

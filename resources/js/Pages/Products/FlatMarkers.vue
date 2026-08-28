@@ -136,7 +136,7 @@
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Design a Flat Marker</h3>
             <p class="text-white/70 text-sm mb-5">Free consultation. We confirm your cemetery's section rules before design begins and send a digital proof before any payment is due.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
 
           <div class="bg-white rounded-2xl border border-stone-dark p-6">
@@ -147,7 +147,7 @@
               <li>20" × 36" single: from $950</li>
               <li>24" × 48" companion: from $1,300</li>
             </ul>
-            <p class="text-xs text-granite italic mt-3">Includes design proof, manufacturing, freight, and sexton coordination. Add-on engravings (temple silhouette, portrait, scripture band) quoted separately.</p>
+            <p class="text-xs text-granite italic mt-3">Includes manufacturing, freight, and sexton coordination. Add-on engravings (temple silhouette, portrait, scripture band) quoted separately.</p>
           </div>
 
           <RelatedLinks :links="related" />
@@ -191,6 +191,7 @@ const heroImage = '/images/products/flat-headstone.jpg';
 
 const gallery = [
   '/images/products/flat-headstone.jpg',
+  '/images/products/flat-headstone-1.jpg',
   '/images/products/flat-headstone-2.jpg',
   '/images/products/flat-headstone-3.jpg',
   '/images/products/flat-baby-headstone.jpg',

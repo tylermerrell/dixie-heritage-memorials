@@ -124,8 +124,8 @@
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Order a Headstone for Toquerville</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation. Design proof before any payment.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <p class="text-white/70 text-sm mb-5">Free consultation. We verify before any payment.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
@@ -203,7 +203,7 @@ const pricing = [
 const steps = [
   { title: 'Confirm the plot', body: 'The town office maintains the plot records. We confirm exact location before quoting.' },
   { title: 'We contact the town office', body: 'Given Toquerville\'s small size, the town office handles coordination directly. We verify current rules before we quote.' },
-  { title: 'Design proof', body: 'A digital proof shows exact dimensions and engraving. For pioneer-family plots, we include neighboring-stone context so the new design fits.' },
+  { title: 'Design layout', body: 'A digital layout shows exact dimensions and engraving. For pioneer-family plots, we include neighboring-stone context so the new design fits.' },
   { title: 'Manufacturing and freight', body: 'Typical lead time from proof approval is 8–16 weeks. Year-round installation window.' },
   { title: 'Foundation and setting', body: 'Concrete apron poured, setting coordinated with the town office, first cleaning included at six months.' },
 ];

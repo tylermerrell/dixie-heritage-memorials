@@ -136,8 +136,8 @@
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Order a Headstone for Santa Clara</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation. Design proof before any payment.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <p class="text-white/70 text-sm mb-5">Free consultation. We verify before any payment.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
@@ -215,7 +215,7 @@ const pricing = [
 const steps = [
   { title: 'Confirm your section', body: 'Historic sections require more design context than newer sections. We ask the city clerk to confirm your plot before quoting.' },
   { title: 'We contact the city clerk', body: 'The 24-hour notice, current height maximum, and any section-specific rules get verified before production.' },
-  { title: 'Design proof with heritage motifs', body: 'For Swiss-heritage families, we include Alpine floral, crest, or bilingual inscription options in your digital proof.' },
+  { title: 'Design layout with heritage motifs', body: 'For Swiss-heritage families, we include Alpine floral, crest, or bilingual inscription options in your digital layout.' },
   { title: 'Manufacturing and freight', body: 'Typical lead time from proof approval is 8–16 weeks. Swiss-heritage engravings may add one week for design iteration.' },
   { title: 'Foundation and setting', body: 'We pour the required concrete apron and coordinate the setting with the city clerk. First cleaning at six months included.' },
 ];

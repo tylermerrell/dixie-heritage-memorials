@@ -17,7 +17,7 @@
         <div class="mt-8 flex flex-wrap gap-3">
           <div class="bg-white/5 rounded-full px-4 py-2 text-sm">Local manufacturing</div>
           <div class="bg-white/5 rounded-full px-4 py-2 text-sm">Cemetery-verified before design</div>
-          <div class="bg-white/5 rounded-full px-4 py-2 text-sm">Free design proofs</div>
+          <div class="bg-white/5 rounded-full px-4 py-2 text-sm">Free consultations</div>
           <div class="bg-white/5 rounded-full px-4 py-2 text-sm">Year-round install (Southern Utah climate)</div>
           <div class="bg-white/5 rounded-full px-4 py-2 text-sm">Direct-from-shop pricing</div>
         </div>

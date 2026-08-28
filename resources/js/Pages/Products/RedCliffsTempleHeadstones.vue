@@ -131,7 +131,7 @@
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Design a Red Cliffs Temple Headstone</h3>
             <p class="text-white/70 text-sm mb-5">Free consultation. Digital proof shows the temple etch at exact scale on the actual granite before any payment is due.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
 
           <div class="bg-white rounded-2xl border border-stone-dark p-6">
@@ -192,6 +192,7 @@ const gallery = [
   '/images/products/upright-headstones-8.jpg',
   '/images/products/upright-headstones-1.jpg',
   '/images/products/upright-headstones-5.jpg',
+  '/images/products/upright-headstones-3.jpg',
 ];
 
 const faqs = [

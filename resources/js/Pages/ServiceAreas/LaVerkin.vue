@@ -86,6 +86,21 @@
             <p>Lead time is typical: 10–18 weeks from first consultation to set stone. Year-round install window applies.</p>
           </div>
 
+
+          <div class="bg-white rounded-2xl border border-stone-dark p-6">
+            <h2 class="font-serif text-xl font-semibold text-evergreen mb-1">Memorial Style Examples</h2>
+            <p class="text-granite text-sm mb-4">Headstone styles we craft for La Verkin families — verified against local cemetery rules before production. Tap any image to enlarge.</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              <button
+                v-for="(img, i) in gallery"
+                :key="img"
+                class="aspect-[4/3] overflow-hidden rounded-xl bg-stone hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-bronze"
+                @click="lightboxIndex = i"
+              >
+                <img :src="img" :alt="`Headstone and monument example for La Verkin`" class="w-full h-full object-cover" />
+              </button>
+            </div>
+          </div>
           <div class="bg-white rounded-2xl border border-stone-dark p-8">
             <h2 class="font-serif text-2xl font-semibold text-evergreen mb-6">Frequently Asked Questions — La Verkin</h2>
             <div class="space-y-5">
@@ -102,23 +117,44 @@
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Design a La Verkin Memorial</h3>
             <p class="text-white/70 text-sm mb-5">Free consultation and cemetery verification before design begins.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
 
       </div>
     </section>
+
+    <Teleport to="body">
+      <div
+        v-if="lightboxIndex !== null"
+        class="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+        @click.self="lightboxIndex = null"
+      >
+        <button class="absolute top-4 right-4 text-white/70 hover:text-white p-2" @click="lightboxIndex = null" aria-label="Close">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <button v-if="lightboxIndex > 0" class="absolute left-4 text-white/70 hover:text-white p-2" @click="lightboxIndex--" aria-label="Previous">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <img :src="gallery[lightboxIndex]" alt="Memorial style example" class="max-h-[90vh] max-w-full rounded-lg object-contain" />
+        <button v-if="lightboxIndex < gallery.length - 1" class="absolute right-4 text-white/70 hover:text-white p-2" @click="lightboxIndex++" aria-label="Next">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </Teleport>
   </AppLayout>
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import { Head, Link } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import RelatedLinks from '@/Components/RelatedLinks.vue';
 import { useDesignModal } from '@/composables/useDesignModal.js';
 
 const { openModal } = useDesignModal();
+const lightboxIndex = ref(null);
 
 const cemeteries = [
   { name: 'LaVerkin City Cemetery', note: 'City-administered, agricultural pioneer', href: '/cemeteries/laverkin-city-cemetery' },
@@ -151,7 +187,7 @@ const faqs = [
   },
   {
     q: 'How long does installation take from first consultation?',
-    a: 'Typical 10–18 weeks. Design proof within 5 business days. Manufacturing and freight are the longest step.',
+    a: 'Typical 10–18 weeks. Design layout within 5 business days. Manufacturing and freight are the longest step.',
   },
 ];
 
@@ -162,5 +198,13 @@ const related = [
   { label: 'Upright Monuments', href: '/headstones/upright-monuments' },
   { label: 'Buying Guide — Southern Utah', href: '/resources/buying-guide' },
   { label: 'All Washington County Cemeteries', href: '/cemeteries' },
+];
+const gallery = [
+  '/images/products/upright-headstones-10.jpg',
+  '/images/products/upright-headstones.jpg',
+  '/images/products/flat-headstone-1.jpg',
+  '/images/products/slant-headstone-6.jpg',
+  '/images/products/bronze-headstone-8.jpg',
+  '/images/products/slant-headstone-7.jpg',
 ];
 </script>

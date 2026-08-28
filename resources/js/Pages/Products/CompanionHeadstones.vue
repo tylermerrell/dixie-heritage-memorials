@@ -52,7 +52,7 @@
               <li><strong>Engrave both names now.</strong> Adds the surviving spouse's name and birth date immediately. Only the death date needs to be added later. Saves a return-visit engraving fee ($400–$700) at time of death. Some families find the visible half-inscription emotionally heavy for a decade or more. Others find it comforting — a preview of the shared resting place.</li>
               <li><strong>Engrave one name only.</strong> Standard installation with the second half of the stone blank. When the surviving spouse dies, we return to the cemetery, remove the stone, engrave the second name and dates in the shop, and reinstall. Adds cost and lead time but keeps the memorial's inscription "one life at a time."</li>
             </ul>
-            <p>There is no wrong answer. About 60% of our companion installations engrave both names at first setting; 40% wait. We show both options on the design proof so families can see them side by side.</p>
+            <p>There is no wrong answer. About 60% of our companion installations engrave both names at first setting; 40% wait. We show both options on the design layout so families can see them side by side.</p>
           </div>
 
           <div class="bg-white rounded-2xl border border-stone-dark p-8 prose-custom">
@@ -98,8 +98,8 @@
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Design a Companion Stone</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation and design proof. We show both engraving options — both names now, or one name at a time.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <p class="text-white/70 text-sm mb-5">Free consultation. We show both engraving options — both names now, or one name at a time.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
 
           <div class="bg-white rounded-2xl border border-stone-dark p-6">
@@ -110,7 +110,7 @@
               <li>Companion flat 24" × 48": from $1,300</li>
               <li>Companion bench: from $3,500</li>
             </ul>
-            <p class="text-xs text-granite italic mt-3">Includes design proof, foundation, freight, and sexton coordination. Additional engraving after installation quoted separately.</p>
+            <p class="text-xs text-granite italic mt-3">Includes foundation, freight, and sexton coordination. Additional engraving after installation quoted separately.</p>
           </div>
 
           <RelatedLinks :links="related" />
@@ -154,17 +154,19 @@ const heroImage = '/images/products/upright-headstones-1.jpg';
 
 const gallery = [
   '/images/products/upright-headstones-1.jpg',
+  '/images/products/upright-headstones-2.jpg',
   '/images/products/upright-headstones-3.jpg',
   '/images/products/upright-headstones-4.jpg',
   '/images/products/upright-headstones-5.jpg',
   '/images/products/upright-headstones-6.jpg',
   '/images/products/upright-headstones-7.jpg',
+  '/images/products/upright-headstones-8.jpg',
 ];
 
 const faqs = [
   {
     q: 'Should I engrave both names now, or wait until the surviving spouse passes?',
-    a: 'This is entirely a family decision. About 60% of Washington County couples we work with engrave both names at first setting — it saves a return-visit engraving fee ($400–$700 later) and completes the memorial as a shared design. About 40% leave the second name blank so the inscription accumulates "one life at a time." We show both options on the design proof.',
+    a: 'This is entirely a family decision. About 60% of Washington County couples we work with engrave both names at first setting — it saves a return-visit engraving fee ($400–$700 later) and completes the memorial as a shared design. About 40% leave the second name blank so the inscription accumulates "one life at a time." We show both options on the design layout.',
   },
   {
     q: 'Can we buy the companion stone now while both spouses are still living?',

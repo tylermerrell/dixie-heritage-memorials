@@ -149,7 +149,7 @@
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Order a Headstone for Hurricane</h3>
             <p class="text-white/70 text-sm mb-5">Free consultation. We call the Cemetery Clerk, verify your plot, and send a digital proof before any payment.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
@@ -238,7 +238,7 @@ const steps = [
     body: 'We verify current section rules, height maximums, and the 24-hour notice requirement before we quote. If a monument dimension would fail approval, we tell you before you spend.',
   },
   {
-    title: 'You approve a design proof',
+    title: 'You approve a design layout',
     body: 'A digital proof shows exact dimensions, engraving, granite color, and any custom artwork — including St. George Utah Temple silhouettes if you choose. Your written approval starts production.',
   },
   {

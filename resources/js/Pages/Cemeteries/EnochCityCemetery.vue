@@ -99,8 +99,8 @@
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Order a Headstone for Enoch</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation. Design proof before any payment.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <p class="text-white/70 text-sm mb-5">Free consultation. We verify before any payment.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
@@ -171,7 +171,7 @@ const pricing = [
 const steps = [
   { title: 'Confirm the section', body: 'Enoch has historic and post-1996 sections with different rules. We verify with the city clerk.' },
   { title: 'We contact the city clerk', body: 'The 24-hour notice, current dimensions rules, any approvals verified before production.' },
-  { title: 'Design proof', body: 'Digital proof shows exact dimensions and engraving. Written approval starts production.' },
+  { title: 'Design layout', body: 'Digital layout shows exact dimensions and engraving. Written approval starts production.' },
   { title: 'Manufacturing and freight', body: 'Typical lead time 8–16 weeks. March–November installation window for pours.' },
   { title: 'Foundation and setting', body: 'Deeper frost-line foundation. Setting coordinated with the city clerk.' },
 ];

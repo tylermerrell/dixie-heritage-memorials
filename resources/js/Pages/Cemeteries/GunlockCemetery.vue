@@ -106,7 +106,7 @@
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Order a Headstone for Gunlock</h3>
             <p class="text-white/70 text-sm mb-5">Free consultation. Small-community coordination directly.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
@@ -178,7 +178,7 @@ const pricing = [
 const steps = [
   { title: 'Confirm the plot', body: 'Since Gunlock is unincorporated, we confirm plot records with Washington County or community stewards.' },
   { title: 'We contact the county', body: 'Verify any coordination requirements before design.' },
-  { title: 'Design proof', body: 'Digital proof shows exact dimensions and engraving. Written approval starts production.' },
+  { title: 'Design layout', body: 'Digital layout shows exact dimensions and engraving. Written approval starts production.' },
   { title: 'Manufacturing and freight', body: 'Typical lead time 8–16 weeks. Year-round installation window.' },
   { title: 'Setting', body: 'Concrete apron poured, monument set with direct community coordination.' },
 ];

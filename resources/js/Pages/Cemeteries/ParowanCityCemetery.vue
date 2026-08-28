@@ -102,8 +102,8 @@
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Order a Headstone for Parowan</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation. Design proof before any payment.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <p class="text-white/70 text-sm mb-5">Free consultation. We verify before any payment.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
@@ -174,7 +174,7 @@ const pricing = [
 const steps = [
   { title: 'Confirm the section', body: 'Historic sections carry more design context; newer sections carry more procedural formality. We verify plot location before quoting.' },
   { title: 'We contact the city clerk', body: '24-hour notice, current rules, dimensions verified before production.' },
-  { title: 'Design proof', body: 'For plots near pioneer stones, we include neighboring-stone context so the new monument fits its historical setting.' },
+  { title: 'Design layout', body: 'For plots near pioneer stones, we include neighboring-stone context so the new monument fits its historical setting.' },
   { title: 'Manufacturing and freight', body: 'Typical lead time 8–16 weeks. Installation March–November preferred for concrete pours.' },
   { title: 'Foundation and setting', body: 'Deep frost-line foundation for Parowan\'s ~6,000 ft elevation. Setting coordinated with city clerk.' },
 ];

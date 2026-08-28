@@ -49,7 +49,7 @@
           <h2 class="font-serif text-2xl sm:text-3xl font-semibold mb-3">Question we haven't covered?</h2>
           <p class="text-white/70 mb-6 max-w-xl mx-auto">Our resource library grows every month. If a question about a specific Southern Utah cemetery, temple engraving, or VA process isn't answered here, call or text and we'll answer it directly.</p>
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link href="/contact" class="inline-flex items-center gap-2 bg-bronze hover:bg-bronze-dark text-white font-semibold px-8 py-3.5 rounded-lg transition-colors">Request a Free Design Proof</Link>
+            <Link href="/contact" class="inline-flex items-center gap-2 bg-bronze hover:bg-bronze-dark text-white font-semibold px-8 py-3.5 rounded-lg transition-colors">Request a Quote</Link>
             <a href="tel:+14352543122" class="inline-flex items-center gap-2 border border-white/30 hover:border-white text-white font-semibold px-8 py-3.5 rounded-lg transition-colors">Call (435) 254-3122</a>
           </div>
         </div>

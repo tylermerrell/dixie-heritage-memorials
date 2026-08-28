@@ -2,7 +2,7 @@
   <AppLayout>
     <Head>
       <title>Contact St. George Memorials | Southern Utah Headstone Consultation</title>
-      <meta name="description" content="Talk to a Southern Utah headstone specialist. We contact your cemetery — Tonaquint, Hurricane, Ivins, Santa Clara, St. George City — before quoting your stone. Free digital design proof. One business day response." />
+      <meta name="description" content="Talk to a Southern Utah headstone specialist. We contact your cemetery — Tonaquint, Hurricane, Ivins, Santa Clara, St. George City — before quoting your stone. One business day response." />
       <link rel="canonical" href="https://stgeorgememorials.com/contact" />
     </Head>
 
@@ -143,7 +143,7 @@
             <ol class="space-y-3 text-sm text-granite">
               <li class="flex gap-3"><span class="font-semibold text-evergreen">1.</span> A Southern Utah specialist reads your message and responds within one business day (usually the same day, often within an hour during business hours).</li>
               <li class="flex gap-3"><span class="font-semibold text-evergreen">2.</span> We call the sexton at your cemetery — Tonaquint, St. George City, Hurricane, or wherever — and confirm the current rules for your specific section, block, and row.</li>
-              <li class="flex gap-3"><span class="font-semibold text-evergreen">3.</span> You receive a free digital design proof showing granite color, engraving layout, and any temple silhouette at exact scale. Plus an itemized quote — stone, apron, freight, sexton coordination, first cleaning.</li>
+              <li class="flex gap-3"><span class="font-semibold text-evergreen">3.</span> You receive an itemized quote — stone, apron, freight, sexton coordination, first cleaning.</li>
               <li class="flex gap-3"><span class="font-semibold text-evergreen">4.</span> Nothing goes to production until you approve the proof in writing. No pressure. No hidden add-ons at delivery.</li>
             </ol>
           </div>

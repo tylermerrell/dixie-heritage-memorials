@@ -142,7 +142,7 @@
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Order a Headstone for Ivins</h3>
             <p class="text-white/70 text-sm mb-5">Free consultation. We verify your section with the city clerk before we quote.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
@@ -227,7 +227,7 @@ const steps = [
     body: 'We verify the 48-hour notice requirement, height maximum for your section, and current border rules before quoting.',
   },
   {
-    title: 'You approve a design proof',
+    title: 'You approve a design layout',
     body: 'Your digital proof shows the monument at exact scale — including any Red Mountain or Snow Canyon landscape motifs you choose. Written approval starts production.',
   },
   {

@@ -7,33 +7,6 @@
       <meta property="og:title" content="Upright Monuments & Headstones St. George Utah | St. George Memorials" />
       <meta property="og:description" content="Custom standing headstones for Southern Utah cemeteries. Jet black, gray, blue pearl, and specialty granites. Cemetery approval guaranteed before production." />
       <meta property="og:url" content="https://stgeorgememorials.com/headstones/upright-monuments" />
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "Upright Monument / Standing Headstone",
-        "description": "Custom upright granite monuments and standing headstones for Washington County cemeteries. Available in jet black, gray, blue pearl, and specialty granites. Custom engraving, temple silhouettes, and laser-etched portraits included.",
-        "url": "https://stgeorgememorials.com/headstones/upright-monuments",
-        "image": "https://stgeorgememorials.com/images/products/upright-headstones-8.png",
-        "brand": { "@id": "https://stgeorgememorials.com/#business" },
-        "offers": {
-          "@type": "AggregateOffer",
-          "priceCurrency": "USD",
-          "lowPrice": "1200",
-          "highPrice": "4000",
-          "offerCount": "1",
-          "seller": { "@id": "https://stgeorgememorials.com/#business" }
-        },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stgeorgememorials.com/" },
-            { "@type": "ListItem", "position": 2, "name": "Products", "item": "https://stgeorgememorials.com/headstones" },
-            { "@type": "ListItem", "position": 3, "name": "Upright Monuments", "item": "https://stgeorgememorials.com/headstones/upright-monuments" }
-          ]
-        }
-      }
-      </script>
     </Head>
 
     <section class="bg-evergreen text-white py-14">
@@ -91,9 +64,9 @@
 
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
-            <h3 class="font-serif text-xl font-semibold mb-3">Request a Free Design Proof</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation. We verify your cemetery's rules and send a design proof before any payment is due.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <h3 class="font-serif text-xl font-semibold mb-3">Request a Quote</h3>
+            <p class="text-white/70 text-sm mb-5">Free consultation. We verify your cemetery's rules before any payment is due.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
@@ -128,6 +101,33 @@ import { Head } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import RelatedLinks from '@/Components/RelatedLinks.vue';
 import { useDesignModal } from '@/composables/useDesignModal.js';
+import { useJsonLd } from '@/composables/useJsonLd.js';
+
+useJsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'Upright Monument / Standing Headstone',
+  description: 'Custom upright granite monuments and standing headstones for Washington County cemeteries. Available in jet black, gray, blue pearl, and specialty granites. Custom engraving, temple silhouettes, and laser-etched portraits included.',
+  url: 'https://stgeorgememorials.com/headstones/upright-monuments',
+  image: 'https://stgeorgememorials.com/images/products/upright-headstones-8.png',
+  brand: { '@id': 'https://stgeorgememorials.com/#business' },
+  offers: {
+    '@type': 'AggregateOffer',
+    priceCurrency: 'USD',
+    lowPrice: '1200',
+    highPrice: '4000',
+    offerCount: '1',
+    seller: { '@id': 'https://stgeorgememorials.com/#business' },
+  },
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stgeorgememorials.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Products', item: 'https://stgeorgememorials.com/headstones' },
+      { '@type': 'ListItem', position: 3, name: 'Upright Monuments', item: 'https://stgeorgememorials.com/headstones/upright-monuments' },
+    ],
+  },
+});
 
 const { openModal } = useDesignModal();
 const lightboxIndex = ref(null);
@@ -141,6 +141,9 @@ const gallery = [
   '/images/products/upright-headstones-3.jpg',
   '/images/products/upright-headstones-4.jpg',
   '/images/products/upright-headstones-5.jpg',
+  '/images/products/upright-headstones-6.jpg',
+  '/images/products/upright-headstones-7.jpg',
+  '/images/products/upright-headstones-8.jpg',
 ];
 
 const related = [

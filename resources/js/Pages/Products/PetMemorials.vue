@@ -105,8 +105,8 @@
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Design a Pet Memorial</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation and design proof. We help with HOA-friendly options for Sun River, Kayenta, and other Washington County retirement communities.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <p class="text-white/70 text-sm mb-5">Free consultation. We help with HOA-friendly options for Sun River, Kayenta, and other Washington County retirement communities.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
 
           <div class="bg-white rounded-2xl border border-stone-dark p-6">
@@ -118,7 +118,7 @@
               <li>Upright small 10" × 8": from $425</li>
               <li>Bronze portrait plaque: from $500</li>
             </ul>
-            <p class="text-xs text-granite italic mt-3">Includes design proof and shipping. Backyard installation guidance provided at no charge.</p>
+            <p class="text-xs text-granite italic mt-3">Includes shipping. Backyard installation guidance provided at no charge.</p>
           </div>
 
           <RelatedLinks :links="related" />
@@ -161,10 +161,11 @@ const lightboxIndex = ref(null);
 const heroImage = '/images/products/flat-headstone-2.jpg';
 
 const gallery = [
-  '/images/products/flat-headstone-2.jpg',
+  '/images/products/pet-headstone.jpg',
+  '/images/products/pet-headstone-1.jpg',
+  '/images/products/pet-headstone-2.jpg',
   '/images/products/flat-headstone.jpg',
-  '/images/products/flat-headstone-3.jpg',
-  '/images/products/bronze-headstone-1.jpg',
+  '/images/products/flat-headstone-2.jpg',
 ];
 
 const faqs = [
@@ -178,7 +179,7 @@ const faqs = [
   },
   {
     q: 'Can I use a portrait of my pet on the marker?',
-    a: 'Yes. Laser-etched portraits reproduce beautifully from a daylight phone photo. Jet black polished granite is the best surface for portrait detail. We show the etched portrait at exact scale on the design proof before manufacturing.',
+    a: 'Yes. Laser-etched portraits reproduce beautifully from a daylight phone photo. Jet black polished granite is the best surface for portrait detail. We show the etched portrait at exact scale on the design layout before manufacturing.',
   },
   {
     q: 'How long does a granite pet marker last outdoors in Southern Utah?',

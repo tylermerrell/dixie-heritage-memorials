@@ -58,9 +58,9 @@
         <!-- CTA -->
         <div class="mt-16 text-center">
           <h2 class="font-serif text-2xl font-semibold text-evergreen mb-3">Ready to Design Your Own?</h2>
-          <p class="text-granite mb-6 max-w-xl mx-auto">Free design proof. We verify your cemetery's rules and send a proof before any payment is due.</p>
+          <p class="text-granite mb-6 max-w-xl mx-auto"> We verify your cemetery's rules and send a proof before any payment is due.</p>
           <button @click="openModal" class="bg-evergreen hover:bg-evergreen-light text-white font-semibold px-8 py-3 rounded-lg transition-colors">
-            Request a Free Design Proof
+            Request a Quote
           </button>
         </div>
       </div>
@@ -120,29 +120,61 @@ const lightboxIndex = ref(null);
 const activeCategory = ref('All');
 
 const items = [
-  { id: 1,  src: '/images/products/upright-headstones-8.jpg',  category: 'Upright Monuments', title: 'Classic Upright Granite' },
+  { id: 1,  src: '/images/products/upright-headstones.jpg',    category: 'Upright Monuments', title: 'Classic Granite Upright' },
   { id: 2,  src: '/images/products/upright-headstones-1.jpg',  category: 'Upright Monuments', title: 'Double Companion Monument' },
-  { id: 3,  src: '/images/products/upright-headstones-4.jpg',  category: 'Upright Monuments', title: 'Heritage Upright' },
-  { id: 4,  src: '/images/products/upright-headstones-7.jpg',  category: 'Upright Monuments', title: 'Custom Engraved Upright' },
-  { id: 5,  src: '/images/products/upright-headstones-10.jpg', category: 'Upright Monuments', title: 'Black Granite Monument' },
-  { id: 6,  src: '/images/products/flat-headstone.jpg',        category: 'Flat Markers',      title: 'Gray Granite Flat Marker' },
-  { id: 7,  src: '/images/products/flat-headstone-2.jpg',      category: 'Flat Markers',      title: 'Flat Marker with Engraving' },
-  { id: 8,  src: '/images/products/flat-headstone-3.jpg',      category: 'Flat Markers',      title: 'Companion Flat Marker' },
-  { id: 9,  src: '/images/products/bronze-headstone.jpg',      category: 'Bronze',            title: 'Flush Bronze Marker' },
-  { id: 10, src: '/images/products/bronze-headstone-1.jpg',    category: 'Bronze',            title: 'Bronze with Granite Base' },
-  { id: 11, src: '/images/products/bronze-headstone-2.jpg',    category: 'Bronze',            title: 'Heritage Bronze Plaque' },
-  { id: 12, src: '/images/products/bronze-headstone-3.jpg',    category: 'Bronze',            title: 'Classic Bronze Memorial' },
-  { id: 13, src: '/images/products/slant-headstone.jpg',       category: 'Slant & Bevel',    title: 'Slant Marker in Blue Pearl' },
-  { id: 14, src: '/images/products/slant-headstone-2.jpg',     category: 'Slant & Bevel',    title: 'Bevel Marker with Flowers' },
-  { id: 15, src: '/images/products/slant-headstone-3.jpg',     category: 'Slant & Bevel',    title: 'Gray Slant Marker' },
-  { id: 16, src: '/images/products/bevled-headstone.jpg',      category: 'Slant & Bevel',    title: 'Classic Bevel Marker' },
-  { id: 17, src: '/images/products/custom-headstone.jpg',      category: 'Custom Engraving', title: 'Portrait Laser Engraving' },
-  { id: 18, src: '/images/products/upright-headstones-9.jpg',  category: 'Custom Engraving', title: 'Pioneer Heritage Motif' },
-  { id: 19, src: '/images/products/upright-headstones-3.jpg',  category: 'Veterans',         title: 'Military Upright Monument' },
-  { id: 20, src: '/images/products/upright-headstones-5.jpg',  category: 'Veterans',         title: 'Veteran Tribute Stone' },
-  { id: 21, src: '/images/products/flat-baby-headstone.jpg',   category: 'Pet Memorials',    title: 'Small Memorial Marker' },
-  { id: 22, src: '/images/products/upright-headstones-2.jpg',  category: 'Upright Monuments', title: 'Polished Black Granite' },
-  { id: 23, src: '/images/products/upright-headstones-6.jpg',  category: 'Upright Monuments', title: 'Gray Granite Upright' },
+  { id: 3,  src: '/images/products/upright-headstones-2.jpg',  category: 'Upright Monuments', title: 'Polished Black Granite' },
+  { id: 4,  src: '/images/products/upright-headstones-3.jpg',  category: 'Upright Monuments', title: 'Pioneer Heritage Motif' },
+  { id: 5,  src: '/images/products/upright-headstones-4.jpg',  category: 'Upright Monuments', title: 'Heritage Upright' },
+  { id: 6,  src: '/images/products/upright-headstones-5.jpg',  category: 'Upright Monuments', title: 'Veteran Tribute Stone' },
+  { id: 7,  src: '/images/products/upright-headstones-6.jpg',  category: 'Upright Monuments', title: 'Gray Granite Upright' },
+  { id: 8,  src: '/images/products/upright-headstones-7.jpg',  category: 'Upright Monuments', title: 'Custom Engraved Upright' },
+  { id: 9,  src: '/images/products/upright-headstones-8.jpg',  category: 'Upright Monuments', title: 'Jet Black Monument' },
+  { id: 10, src: '/images/products/upright-headstones-9.jpg',  category: 'Upright Monuments', title: 'Southern Utah Design' },
+  { id: 11, src: '/images/products/upright-headstones-10.jpg', category: 'Upright Monuments', title: 'Black Granite Monument' },
+  { id: 12, src: '/images/products/flat-headstone.jpg',        category: 'Flat Markers',      title: 'Gray Granite Flat Marker' },
+  { id: 13, src: '/images/products/flat-headstone-1.jpg',      category: 'Flat Markers',      title: 'Polished Flat Marker' },
+  { id: 14, src: '/images/products/flat-headstone-2.jpg',      category: 'Flat Markers',      title: 'Flat Marker with Engraving' },
+  { id: 15, src: '/images/products/flat-headstone-3.jpg',      category: 'Flat Markers',      title: 'Companion Flat Marker' },
+  { id: 16, src: '/images/products/flat-baby-headstone.jpg',   category: 'Flat Markers',      title: 'Small Memorial Marker' },
+  { id: 17, src: '/images/products/slant-headstone.jpg',       category: 'Slant & Bevel',     title: 'Slant Marker' },
+  { id: 18, src: '/images/products/slant-headstone-1.jpg',     category: 'Slant & Bevel',     title: 'Blue Pearl Slant' },
+  { id: 19, src: '/images/products/slant-headstone-2.jpg',     category: 'Slant & Bevel',     title: 'Bevel Marker with Flowers' },
+  { id: 20, src: '/images/products/slant-headstone-3.jpg',     category: 'Slant & Bevel',     title: 'Gray Slant Marker' },
+  { id: 21, src: '/images/products/slant-headstone-4.jpg',     category: 'Slant & Bevel',     title: 'Custom Slant' },
+  { id: 22, src: '/images/products/slant-headstone-6.jpg',     category: 'Slant & Bevel',     title: 'Polished Slant' },
+  { id: 23, src: '/images/products/slant-headstone-7.jpg',     category: 'Slant & Bevel',     title: 'Upright Slant Marker' },
+  { id: 24, src: '/images/products/slant-headstone-8.jpg',     category: 'Slant & Bevel',     title: 'Heritage Slant' },
+  { id: 25, src: '/images/products/slant-headstone-9.jpg',     category: 'Slant & Bevel',     title: 'Jet Black Slant' },
+  { id: 26, src: '/images/products/slant-headstone-10.jpg',    category: 'Slant & Bevel',     title: 'Granite Slant' },
+  { id: 27, src: '/images/products/bevel-headstone.jpg',       category: 'Slant & Bevel',     title: 'Classic Bevel Marker' },
+  { id: 28, src: '/images/products/bevel-headstone-1.jpg',     category: 'Slant & Bevel',     title: 'Low-Profile Bevel' },
+  { id: 29, src: '/images/products/bevel-headstone-2.jpg',     category: 'Slant & Bevel',     title: 'Polished Bevel' },
+  { id: 30, src: '/images/products/bronze-headstone.jpg',      category: 'Bronze',            title: 'Flush Bronze Marker' },
+  { id: 31, src: '/images/products/bronze-headstone-1.jpg',    category: 'Bronze',            title: 'Bronze with Granite Base' },
+  { id: 32, src: '/images/products/bronze-headstone-3.jpg',    category: 'Bronze',            title: 'Classic Bronze Memorial' },
+  { id: 33, src: '/images/products/bronze-headstone-5.jpg',    category: 'Bronze',            title: 'Heritage Bronze Plaque' },
+  { id: 34, src: '/images/products/bronze-headstone-6.jpg',    category: 'Bronze',            title: 'VA Bronze Marker' },
+  { id: 35, src: '/images/products/bronze-headstone-8.jpg',    category: 'Bronze',            title: 'Custom Bronze' },
+  { id: 36, src: '/images/products/bench-headstone.jpg',       category: 'Bench Memorials',   title: 'Granite Memorial Bench' },
+  { id: 37, src: '/images/products/bench-headstone-1.jpg',     category: 'Bench Memorials',   title: 'Companion Bench Memorial' },
+  { id: 38, src: '/images/products/bench-headstone-2.jpg',     category: 'Bench Memorials',   title: 'Black Granite Bench' },
+  { id: 39, src: '/images/products/bench-headstone-3.jpg',     category: 'Bench Memorials',   title: 'Gray Bench Memorial' },
+  { id: 40, src: '/images/products/bench-headstone-4.jpg',     category: 'Bench Memorials',   title: 'Engraved Bench' },
+  { id: 41, src: '/images/products/bench-headstone-5.jpg',     category: 'Bench Memorials',   title: 'Pioneer Bench Memorial' },
+  { id: 42, src: '/images/products/pet-headstone.jpg',         category: 'Pet Memorials',     title: 'Small Pet Marker' },
+  { id: 43, src: '/images/products/pet-headstone-1.jpg',       category: 'Pet Memorials',     title: 'Custom Pet Memorial' },
+  { id: 44, src: '/images/products/pet-headstone-2.jpg',       category: 'Pet Memorials',     title: 'Pet Grave Marker' },
+  { id: 45, src: '/images/products/civic-monument.jpg',        category: 'Civic Monuments',   title: 'Community Monument' },
+  { id: 46, src: '/images/products/civic-monument-1.jpg',      category: 'Civic Monuments',   title: 'Veterans Memorial' },
+  { id: 47, src: '/images/products/civic-monument-2.jpg',      category: 'Civic Monuments',   title: 'Pioneer Monument' },
+  { id: 48, src: '/images/products/civic-monument-3.jpg',      category: 'Civic Monuments',   title: 'Public Tribute Stone' },
+  { id: 49, src: '/images/products/civic-monumnet-4.jpg',      category: 'Civic Monuments',   title: 'Civic Memorial' },
+  { id: 50, src: '/images/products/custom-headstone.jpg',      category: 'Custom Engraving',  title: 'Portrait Laser Engraving' },
+  { id: 51, src: '/images/products/kid-headstone.jpg',         category: 'Custom Engraving',  title: 'Infant Memorial' },
+  { id: 52, src: '/images/products/kid-headstone-1.jpg',       category: 'Custom Engraving',  title: 'Child Memorial Marker' },
+  { id: 53, src: '/images/products/kid-headstone-2.jpg',       category: 'Custom Engraving',  title: 'Angel Memorial' },
+  { id: 54, src: '/images/products/kid-headstone-3.jpg',       category: 'Custom Engraving',  title: 'Youth Memorial' },
+  { id: 55, src: '/images/products/kid-headstone-4.jpg',       category: 'Custom Engraving',  title: 'Infant Marker' },
 ];
 
 const categories = computed(() => ['All', ...new Set(items.map(i => i.category))]);

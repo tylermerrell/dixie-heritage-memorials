@@ -125,7 +125,7 @@
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Order a Headstone for Leeds</h3>
             <p class="text-white/70 text-sm mb-5">Free consultation. Every quote checked against Leeds\' strict 18"×36" dimension rules.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
@@ -203,7 +203,7 @@ const pricing = [
 const steps = [
   { title: 'Confirm dimensions early', body: 'Leeds\' 18×36 rule is strict. Every design starts with confirming your intended dimensions against the town\'s current limits.' },
   { title: 'We contact Leeds Town Hall', body: 'The 24-hour notice, height maximum, and any special approvals for oversized monuments get verified before quoting.' },
-  { title: 'Design proof', body: 'Digital proof shows exact dimensions and engraving. If you\'ve requested a larger-than-standard monument, we include Town Hall approval status.' },
+  { title: 'Design layout', body: 'Digital layout shows exact dimensions and engraving. If you\'ve requested a larger-than-standard monument, we include Town Hall approval status.' },
   { title: 'Manufacturing and freight', body: 'Typical lead time from proof approval is 8–16 weeks. Year-round installation.' },
   { title: 'Foundation and setting', body: 'Concrete apron poured, setting coordinated with Town Hall staff, first cleaning included at six months.' },
 ];

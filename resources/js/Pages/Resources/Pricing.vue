@@ -43,7 +43,7 @@
             <ul class="space-y-2.5 text-sm text-granite">
               <li class="flex gap-2"><svg class="w-4 h-4 text-evergreen flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>Granite monument, cut and polished to spec</span></li>
               <li class="flex gap-2"><svg class="w-4 h-4 text-evergreen flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>All engraving — name, dates, epitaph, symbols, temple silhouette</span></li>
-              <li class="flex gap-2"><svg class="w-4 h-4 text-evergreen flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>Digital design proof at exact scale (unlimited revisions until you approve)</span></li>
+              <li class="flex gap-2"><svg class="w-4 h-4 text-evergreen flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>Digital design layout at exact scale (unlimited revisions until you approve)</span></li>
               <li class="flex gap-2"><svg class="w-4 h-4 text-evergreen flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>Sexton coordination — we call your cemetery, verify current rules for your section, and submit dimensions for approval</span></li>
               <li class="flex gap-2"><svg class="w-4 h-4 text-evergreen flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>Required concrete apron / mow strip (Tonaquint 4–6 inch, Ivins 4–6 inch, Hurricane rock-pitch base, etc.)</span></li>
               <li class="flex gap-2"><svg class="w-4 h-4 text-evergreen flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg><span>Freight to any Washington, Iron, Kane, Beaver, or Garfield County cemetery</span></li>
@@ -103,7 +103,7 @@
         <!-- Snowbird / out of state -->
         <div class="bg-white rounded-2xl border border-stone-dark p-8 mb-10 prose-custom">
           <h2>Snowbird & out-of-state ordering</h2>
-          <p>Freight to a Washington County cemetery does not add meaningful cost — the monument is being freighted either way. Coordination is the value we add for out-of-state families, and we do not upcharge it. Design proof by email, sexton called on your behalf, monument freighted directly to the cemetery, setting under sexton supervision, photo documentation to you at completion.</p>
+          <p>Freight to a Washington County cemetery does not add meaningful cost — the monument is being freighted either way. Coordination is the value we add for out-of-state families, and we do not upcharge it. Design coordination by email, sexton called on your behalf, monument freighted directly to the cemetery, setting under sexton supervision, photo documentation to you at completion.</p>
           <p>For families who do want an expedited timeline (typically for a Memorial Day or anniversary date), we offer rush production at a $200–$400 add-on. This buys about 3 weeks in the manufacturing step. Sexton approval and freight timelines are fixed and cannot be compressed.</p>
         </div>
 
@@ -117,6 +117,22 @@
             <li><strong>$3,500 – $9,000 — companion or custom upright path.</strong> Double monument for a couple, or a single upright with photorealistic laser-etched portrait plus temple silhouette. Common in retirement-community sections and for pre-planned memorials.</li>
           </ul>
           <p>Bench memorials, civic monuments, and elaborate custom pedestals fall above this range. The pricing guide is a starting point — we produce written itemized quotes for every specific order.</p>
+        </div>
+
+        <!-- Gallery -->
+        <div class="bg-white rounded-2xl border border-stone-dark p-6 mb-10">
+          <h2 class="font-serif text-xl font-semibold text-evergreen mb-1">Examples at These Price Points</h2>
+          <p class="text-granite text-sm mb-4">Representative styles from each price tier — all verified against Southern Utah cemetery rules before production. Tap any image to enlarge.</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <button
+              v-for="(img, i) in gallery"
+              :key="img"
+              class="aspect-[4/3] overflow-hidden rounded-xl bg-stone hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-bronze"
+              @click="lightboxIndex = i"
+            >
+              <img :src="img" :alt="`Headstone example ${i + 1}`" class="w-full h-full object-cover" />
+            </button>
+          </div>
         </div>
 
         <!-- What affects price -->
@@ -136,17 +152,50 @@
         <div class="text-center mt-14">
           <h2 class="font-serif text-2xl font-semibold text-evergreen mb-3">Get an itemized written quote</h2>
           <p class="text-granite mb-6 max-w-xl mx-auto">Every quote we produce is itemized — stone, engraving, apron, freight, sexton coordination, first cleaning. Tell us the cemetery and the style you're considering; we'll respond within one business day.</p>
-          <Link href="/contact" class="inline-flex items-center gap-2 bg-bronze hover:bg-bronze-dark text-white font-semibold px-8 py-3.5 rounded-lg transition-colors">Request a Free Design Proof & Quote</Link>
+          <Link href="/contact" class="inline-flex items-center gap-2 bg-bronze hover:bg-bronze-dark text-white font-semibold px-8 py-3.5 rounded-lg transition-colors">Request a Quote & Quote</Link>
         </div>
 
       </div>
     </section>
+    <Teleport to="body">
+      <div
+        v-if="lightboxIndex !== null"
+        class="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+        @click.self="lightboxIndex = null"
+      >
+        <button class="absolute top-4 right-4 text-white/70 hover:text-white p-2" @click="lightboxIndex = null" aria-label="Close">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <button v-if="lightboxIndex > 0" class="absolute left-4 text-white/70 hover:text-white p-2" @click="lightboxIndex--" aria-label="Previous">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <img :src="gallery[lightboxIndex]" alt="Headstone example" class="max-h-[90vh] max-w-full rounded-lg object-contain" />
+        <button v-if="lightboxIndex < gallery.length - 1" class="absolute right-4 text-white/70 hover:text-white p-2" @click="lightboxIndex++" aria-label="Next">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </Teleport>
   </AppLayout>
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import { Head, Link } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
+
+const lightboxIndex = ref(null);
+
+const gallery = [
+  '/images/products/flat-headstone.jpg',
+  '/images/products/slant-headstone.jpg',
+  '/images/products/upright-headstones.jpg',
+  '/images/products/upright-headstones-2.jpg',
+  '/images/products/bronze-headstone.jpg',
+  '/images/products/bench-headstone.jpg',
+  '/images/products/upright-headstones-3.jpg',
+  '/images/products/bevel-headstone.jpg',
+  '/images/products/flat-headstone-2.jpg',
+];
 
 const pricing = [
   {

@@ -26,14 +26,14 @@
 
           <div class="bg-white rounded-2xl border border-stone-dark p-8 prose-custom">
             <h2>What We Offer, and How We Work</h2>
-            <p>Families who come to us for a child's memorial are almost always in the hardest weeks of their lives. Our first job is not to sell. It is to listen, share options at your pace, and give you room to decide when you are ready. Design proofs are always free. There is never a rush.</p>
+            <p>Families who come to us for a child's memorial are almost always in the hardest weeks of their lives. Our first job is not to sell. It is to listen, share options at your pace, and give you room to decide when you are ready. There is never a rush.</p>
             <p>We do not charge additional design fees for infant and child memorials. The base price of the stone is what you pay — the extra design conversation, the multiple proof rounds, the delicate motif work, all of that is included. This has been the policy of our shop for decades and it is not going to change.</p>
           </div>
 
           <div class="bg-white rounded-2xl border border-stone-dark p-8 prose-custom">
             <h2>The Tonaquint Angel Section</h2>
             <p>Tonaquint Cemetery in St. George maintains a dedicated section for infants and small children — sometimes called the Angel section — with slightly more permissive decoration rules and a different aesthetic sensibility than the adjacent adult sections. Small stones, portraits, gentle motifs (angels, cherubs, doves, small hearts, single flowers), and additional keepsakes (weather-safe small toys, seasonal decorations) are more common here.</p>
-            <p>If your family's plot is in the Angel section, our design proofs will reflect the specific dimension rules for that area — typically smaller than adult sections. Verify your exact plot with the sexton at (435) 627-4728 before ordering.</p>
+            <p>If your family's plot is in the Angel section, our design layouts will reflect the specific dimension rules for that area — typically smaller than adult sections. Verify your exact plot with the sexton at (435) 627-4728 before ordering.</p>
             <p>Similar dedicated infant / child sections exist at <a href="/cemeteries/st-george-city-cemetery" class="text-bronze font-medium underline hover:text-evergreen transition-colors">St. George City Cemetery</a>, Hurricane City Cemetery, and Washington City Cemetery. Cemeteries without a dedicated section typically integrate child plots into the family-plot areas and permit smaller-scale designs.</p>
           </div>
 
@@ -107,7 +107,7 @@
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">When You Are Ready to Talk</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation whenever you are ready — no pressure, no timeline. Design proofs are always free.</p>
+            <p class="text-white/70 text-sm mb-5">Free consultation whenever you are ready — no pressure, no timeline. Revisions are included.</p>
             <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Consultation</button>
           </div>
 
@@ -119,7 +119,7 @@
               <li>Small bevel 6" × 18": from $700</li>
               <li>Small slant with carved element: from $1,100</li>
             </ul>
-            <p class="text-xs text-granite italic mt-3">No additional design fees. Design proofs, multiple revisions, and grief-resource referrals included.</p>
+            <p class="text-xs text-granite italic mt-3">No additional design fees. Multiple revisions and grief-resource referrals included.</p>
           </div>
 
           <RelatedLinks :links="related" />
@@ -162,12 +162,12 @@ const lightboxIndex = ref(null);
 const heroImage = '/images/products/flat-baby-headstone.jpg';
 
 const gallery = [
-  '/images/products/flat-baby-headstone.jpg',
   '/images/products/kid-headstone.jpg',
   '/images/products/kid-headstone-1.jpg',
   '/images/products/kid-headstone-2.jpg',
   '/images/products/kid-headstone-3.jpg',
   '/images/products/kid-headstone-4.jpg',
+  '/images/products/flat-baby-headstone.jpg',
 ];
 
 const faqs = [
@@ -189,7 +189,7 @@ const faqs = [
   },
   {
     q: 'Do you charge extra for infant and child memorials?',
-    a: 'No. Design work for infant and child memorials is included in the base stone price with no additional fees, extra proof rounds, or upcharges. Design proofs are always free, and we do not put timelines on families for revisions.',
+    a: 'No. Design work for infant and child memorials is included in the base stone price with no additional fees, extra proof rounds, or upcharges. We do not put timelines on families for revisions.',
   },
   {
     q: 'Are there Southern Utah grief support resources you recommend?',

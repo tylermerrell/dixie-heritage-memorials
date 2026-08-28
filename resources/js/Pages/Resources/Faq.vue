@@ -7,121 +7,6 @@
       <meta property="og:title" content="Southern Utah Headstone FAQ | St. George Memorials" />
       <meta property="og:description" content="Answers to Washington County families' most common headstone questions — cemetery rules, temple engravings, VA markers, snowbird ordering, and pricing." />
       <meta property="og:url" content="https://stgeorgememorials.com/resources/faq" />
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "url": "https://stgeorgememorials.com/resources/faq",
-        "name": "Southern Utah Headstone FAQ",
-        "description": "Answers to Washington County families' most common headstone and monument questions.",
-        "isPartOf": { "@id": "https://stgeorgememorials.com/#website" },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stgeorgememorials.com/" },
-            { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://stgeorgememorials.com/resources" },
-            { "@type": "ListItem", "position": 3, "name": "FAQ", "item": "https://stgeorgememorials.com/resources/faq" }
-          ]
-        },
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What areas do you serve?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Washington County (St. George, Hurricane, Ivins, Santa Clara, Washington City, La Verkin, Toquerville, Enterprise), Iron County (Cedar City, Enoch, Parowan, Paragonah, Kanarraville, Summit), Kane County (Kanab, Fredonia AZ, Orderville, Glendale, Alton, Big Water), Beaver County (Beaver, Milford, Minersville, Adamsville), and Garfield County (Panguitch, Tropic, Escalante, Boulder, Cannonville, Hatch). Southern Utah is the only market we serve." }
-          },
-          {
-            "@type": "Question",
-            "name": "Do I have to buy the headstone from the funeral home?",
-            "acceptedAnswer": { "@type": "Answer", "text": "No. Under the FTC Funeral Rule, Utah families cannot be required to purchase a monument from the funeral home handling arrangements. Buying direct typically saves 30–60% on the same physical stone." }
-          },
-          {
-            "@type": "Question",
-            "name": "What makes ordering in Southern Utah different from ordering in Salt Lake or Provo?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Two things: climate and cemetery culture. The desert environment (300+ sunny days, hard water, red-rock dust) makes some Northern Utah–standard granite recommendations inappropriate here. And our cemeteries — Tonaquint, Hurricane, Ivins, and the smaller pioneer sites — each have section-specific rules that Northern Utah shops don't know." }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I put an upright headstone at Tonaquint Cemetery?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Only in designated rows — historically rows 3 and 4 of each block. The majority of newer plots are flush-marker sections where uprights will be rejected. Also note the January 16, 2026 fence-removal rule affects new decorative borders." }
-          },
-          {
-            "@type": "Question",
-            "name": "Does Parowan City Cemetery really only allow flat markers?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Parowan is strict flush-marker only — no upright monuments. Ordering an upright for a Parowan lot is one of the most common costly mistakes Northern Utah shops make when they don't call the sexton first." }
-          },
-          {
-            "@type": "Question",
-            "name": "What are Hurricane City Cemetery's plot fees?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Currently $550 for Hurricane residents and $2,000 for non-residents, with perpetual care included. Upright monuments are capped at 42 inches. Rock-pitch base recommended. Plot fees are paid directly to the city." }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the concrete apron / mow strip requirement at Ivins and Tonaquint?",
-            "acceptedAnswer": { "@type": "Answer", "text": "A 4-to-6-inch concrete border around the monument base, poured at installation. It stabilizes the stone, protects mowing crews, and prevents hard-water runoff staining the granite face. Required at Tonaquint, Ivins, and most Washington County municipal cemeteries. Included in every quote we produce." }
-          },
-          {
-            "@type": "Question",
-            "name": "What changed at Tonaquint on January 16, 2026?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Effective January 16, 2026, decorative fencing and lot enclosures are prohibited. Existing fences installed before this date have grace but new installations will be removed by cemetery staff. Families designing a plot with a decorative border should have it integrated into an expanded concrete apron instead." }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I have both the St. George Temple and the Red Cliffs Temple on one headstone?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes — this is one of our most requested designs for Washington County couples whose memorial spans both temples. One temple appears as the primary silhouette; the other as a smaller secondary etch on the back or a companion panel." }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the difference between a sandblasted and a laser-etched engraving?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Sandblasted is a traditional recessed carving — the design is cut into the granite as a line drawing, then paint-filled white or contrasting color. Laser etch is a modern precision engraving on the polished granite surface — appears white against dark polished background and can reproduce photographic detail. Sandblast is more affordable and time-tested (30–50 year color life before paint refresh). Laser etch shows finer detail and is more common on jet black granite." }
-          },
-          {
-            "@type": "Question",
-            "name": "Which granite color should I choose for Southern Utah?",
-            "acceptedAnswer": { "@type": "Answer", "text": "For most Washington County installations we recommend Jet Black or Midnight Black polished granite. It resists UV fading, hides hard-water spotting, and provides the best contrast for laser-etched portraits and temple silhouettes. Dakota Mahogany is a strong alternative for families who want the red-rock tone. We recommend against marble in the desert — it weathers too quickly." }
-          },
-          {
-            "@type": "Question",
-            "name": "What does a headstone actually cost in Washington County?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Ranges: Flat markers $500–$1,800. Slant/bevel $700–$2,000. Upright monuments $1,200–$4,000+. Companion doubles $1,800–$9,000+. Temple engraving add-on $150–$700. Every quote is itemized — stone, apron, freight, sexton coordination, first cleaning." }
-          },
-          {
-            "@type": "Question",
-            "name": "What's included in your quote?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Everything needed to have a finished monument standing at your cemetery: granite, all engraving (name, dates, temple silhouette, portrait), digital design proof, sexton coordination, required concrete apron, freight, professional setting, and first-year maintenance cleaning at six months. Nothing added at delivery." }
-          },
-          {
-            "@type": "Question",
-            "name": "How long does the whole process take?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Typical timeline from your first call to a set monument: 10 to 18 weeks. Design proof in 3–5 business days after we've spoken with the sexton. Approval on your pace. Manufacturing 6–12 weeks. Freight and setting 1–3 weeks. First cleaning at six months included." }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I install year-round in Southern Utah?",
-            "acceptedAnswer": { "@type": "Answer", "text": "In the St. George Valley — yes, year-round. Southern Utah's mild winters do not freeze the ground the way Northern Utah does. Cedar City, Enterprise, Central, and higher-elevation Garfield County cemeteries do experience freeze cycles and may have seasonal install windows." }
-          },
-          {
-            "@type": "Question",
-            "name": "Do I need to be in Southern Utah for the ordering process?",
-            "acceptedAnswer": { "@type": "Answer", "text": "No. We handle the entire process remotely for out-of-state families. Design proof by email, sexton coordination on your behalf, freight direct to the cemetery, setting under sexton supervision, photo documentation to you. You never need to be in Southern Utah for the ordering process." }
-          },
-          {
-            "@type": "Question",
-            "name": "What is the Southern Utah National Cemetery?",
-            "acceptedAnswer": { "@type": "Answer", "text": "The 157th VA-operated national cemetery, dedicated September 10, 2025 in Cedar City, Utah. Located at 2181 West 1600 South, Cedar City, Utah 84720 — 45 minutes north of St. George on I-15. Free burial and government-issued marker for eligible veterans." }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I get a private custom headstone AND a VA benefit?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Yes. For veterans who died on or after November 1, 1990, the VA issues a bronze medallion that can be affixed to a private headstone in any cemetery. This allows full custom design (temple silhouettes, laser portraits, companion monuments) with VA recognition. Submit VA Form 40-1330M." }
-          },
-          {
-            "@type": "Question",
-            "name": "How do I clean a headstone in Southern Utah?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Use a gentle non-ionic cleaner and a soft natural-bristle brush. Rinse with distilled water where practical. Never use vinegar, household descalers, or acidic cleaners on polished granite — they permanently etch the surface. Hard-water calcium responds well to non-ionic cleaner over multiple gentle applications." }
-          }
-        ]
-      }
-      </script>
     </Head>
 
     <section class="bg-evergreen text-white py-14">
@@ -148,6 +33,21 @@
           </div>
         </div>
 
+        <div class="bg-white rounded-2xl border border-stone-dark p-6 mt-10">
+          <h2 class="font-serif text-xl font-semibold text-evergreen mb-1">Browse Memorial Styles</h2>
+          <p class="text-granite text-sm mb-4">Headstone and monument examples we install across Southern Utah cemeteries. Every style is available with custom engraving, granite selection, and sexton-verified dimensions. Tap any image to enlarge.</p>
+          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <button
+              v-for="(img, i) in gallery"
+              :key="img"
+              class="aspect-[4/3] overflow-hidden rounded-xl bg-stone hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-bronze"
+              @click="lightboxIndex = i"
+            >
+              <img :src="img" :alt="`Headstone example ${i + 1}`" class="w-full h-full object-cover" />
+            </button>
+          </div>
+        </div>
+
         <div class="bg-evergreen text-white rounded-2xl p-8 text-center mt-10">
           <h2 class="font-serif text-2xl font-semibold mb-3">Question we didn't answer?</h2>
           <p class="text-white/70 mb-6">Call, text, or send a message. We respond within one business day and are always happy to walk through your specific cemetery and situation.</p>
@@ -158,6 +58,24 @@
         </div>
       </div>
     </section>
+    <Teleport to="body">
+      <div
+        v-if="lightboxIndex !== null"
+        class="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+        @click.self="lightboxIndex = null"
+      >
+        <button class="absolute top-4 right-4 text-white/70 hover:text-white p-2" @click="lightboxIndex = null" aria-label="Close">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <button v-if="lightboxIndex > 0" class="absolute left-4 text-white/70 hover:text-white p-2" @click="lightboxIndex--" aria-label="Previous">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <img :src="gallery[lightboxIndex]" alt="Headstone example" class="max-h-[90vh] max-w-full rounded-lg object-contain" />
+        <button v-if="lightboxIndex < gallery.length - 1" class="absolute right-4 text-white/70 hover:text-white p-2" @click="lightboxIndex++" aria-label="Next">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </Teleport>
   </AppLayout>
 </template>
 
@@ -165,6 +83,59 @@
 import { ref } from 'vue';
 import { Head, Link } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
+import { useJsonLd } from '@/composables/useJsonLd.js';
+
+const lightboxIndex = ref(null);
+
+const gallery = [
+  '/images/products/upright-headstones-4.jpg',
+  '/images/products/upright-headstones-5.jpg',
+  '/images/products/flat-headstone-1.jpg',
+  '/images/products/slant-headstone-4.jpg',
+  '/images/products/bronze-headstone-5.jpg',
+  '/images/products/bevel-headstone-1.jpg',
+  '/images/products/upright-headstones-6.jpg',
+  '/images/products/bench-headstone-1.jpg',
+  '/images/products/slant-headstone-2.jpg',
+];
+
+useJsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  url: 'https://stgeorgememorials.com/resources/faq',
+  name: 'Southern Utah Headstone FAQ',
+  description: "Answers to Washington County families' most common headstone and monument questions.",
+  isPartOf: { '@id': 'https://stgeorgememorials.com/#website' },
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stgeorgememorials.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://stgeorgememorials.com/resources' },
+      { '@type': 'ListItem', position: 3, name: 'FAQ', item: 'https://stgeorgememorials.com/resources/faq' },
+    ],
+  },
+  mainEntity: [
+    { '@type': 'Question', name: 'What areas do you serve?', acceptedAnswer: { '@type': 'Answer', text: 'Washington County (St. George, Hurricane, Ivins, Santa Clara, Washington City, La Verkin, Toquerville, Enterprise), Iron County (Cedar City, Enoch, Parowan, Paragonah, Kanarraville, Summit), Kane County (Kanab, Fredonia AZ, Orderville, Glendale, Alton, Big Water), Beaver County (Beaver, Milford, Minersville, Adamsville), and Garfield County (Panguitch, Tropic, Escalante, Boulder, Cannonville, Hatch). Southern Utah is the only market we serve.' } },
+    { '@type': 'Question', name: 'Do I have to buy the headstone from the funeral home?', acceptedAnswer: { '@type': 'Answer', text: 'No. Under the FTC Funeral Rule, Utah families cannot be required to purchase a monument from the funeral home handling arrangements. Buying direct typically saves 30–60% on the same physical stone.' } },
+    { '@type': 'Question', name: 'What makes ordering in Southern Utah different from ordering in Salt Lake or Provo?', acceptedAnswer: { '@type': 'Answer', text: 'Two things: climate and cemetery culture. The desert environment (300+ sunny days, hard water, red-rock dust) makes some Northern Utah–standard granite recommendations inappropriate here. And our cemeteries — Tonaquint, Hurricane, Ivins, and the smaller pioneer sites — each have section-specific rules that Northern Utah shops don\'t know.' } },
+    { '@type': 'Question', name: 'Can I put an upright headstone at Tonaquint Cemetery?', acceptedAnswer: { '@type': 'Answer', text: 'Only in designated rows — historically rows 3 and 4 of each block. The majority of newer plots are flush-marker sections where uprights will be rejected. Also note the January 16, 2026 fence-removal rule affects new decorative borders.' } },
+    { '@type': 'Question', name: 'Does Parowan City Cemetery really only allow flat markers?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. Parowan is strict flush-marker only — no upright monuments. Ordering an upright for a Parowan lot is one of the most common costly mistakes Northern Utah shops make when they don\'t call the sexton first.' } },
+    { '@type': 'Question', name: "What are Hurricane City Cemetery's plot fees?", acceptedAnswer: { '@type': 'Answer', text: 'Currently $550 for Hurricane residents and $2,000 for non-residents, with perpetual care included. Upright monuments are capped at 42 inches. Rock-pitch base recommended. Plot fees are paid directly to the city.' } },
+    { '@type': 'Question', name: 'What is the concrete apron / mow strip requirement at Ivins and Tonaquint?', acceptedAnswer: { '@type': 'Answer', text: 'A 4-to-6-inch concrete border around the monument base, poured at installation. It stabilizes the stone, protects mowing crews, and prevents hard-water runoff staining the granite face. Required at Tonaquint, Ivins, and most Washington County municipal cemeteries. Included in every quote we produce.' } },
+    { '@type': 'Question', name: 'What changed at Tonaquint on January 16, 2026?', acceptedAnswer: { '@type': 'Answer', text: 'Effective January 16, 2026, decorative fencing and lot enclosures are prohibited. Existing fences installed before this date have grace but new installations will be removed by cemetery staff. Families designing a plot with a decorative border should have it integrated into an expanded concrete apron instead.' } },
+    { '@type': 'Question', name: 'Can I have both the St. George Temple and the Red Cliffs Temple on one headstone?', acceptedAnswer: { '@type': 'Answer', text: 'Yes — this is one of our most requested designs for Washington County couples whose memorial spans both temples. One temple appears as the primary silhouette; the other as a smaller secondary etch on the back or a companion panel.' } },
+    { '@type': 'Question', name: 'What is the difference between a sandblasted and a laser-etched engraving?', acceptedAnswer: { '@type': 'Answer', text: 'Sandblasted is a traditional recessed carving — the design is cut into the granite as a line drawing, then paint-filled white or contrasting color. Laser etch is a modern precision engraving on the polished granite surface — appears white against dark polished background and can reproduce photographic detail. Sandblast is more affordable and time-tested (30–50 year color life before paint refresh). Laser etch shows finer detail and is more common on jet black granite.' } },
+    { '@type': 'Question', name: 'Which granite color should I choose for Southern Utah?', acceptedAnswer: { '@type': 'Answer', text: 'For most Washington County installations we recommend Jet Black or Midnight Black polished granite. It resists UV fading, hides hard-water spotting, and provides the best contrast for laser-etched portraits and temple silhouettes. Dakota Mahogany is a strong alternative for families who want the red-rock tone. We recommend against marble in the desert — it weathers too quickly.' } },
+    { '@type': 'Question', name: 'What does a headstone actually cost in Washington County?', acceptedAnswer: { '@type': 'Answer', text: 'Ranges: Flat markers $500–$1,800. Slant/bevel $700–$2,000. Upright monuments $1,200–$4,000+. Companion doubles $1,800–$9,000+. Temple engraving add-on $150–$700. Every quote is itemized — stone, apron, freight, sexton coordination, first cleaning.' } },
+    { '@type': 'Question', name: "What's included in your quote?", acceptedAnswer: { '@type': 'Answer', text: 'Everything needed to have a finished monument standing at your cemetery: granite, all engraving (name, dates, temple silhouette, portrait), digital design layout, sexton coordination, required concrete apron, freight, professional setting, and first-year maintenance cleaning at six months. Nothing added at delivery.' } },
+    { '@type': 'Question', name: 'How long does the whole process take?', acceptedAnswer: { '@type': 'Answer', text: 'Typical timeline from your first call to a set monument: 10 to 18 weeks. Design layout in 3–5 business days after we\'ve spoken with the sexton. Approval on your pace. Manufacturing 6–12 weeks. Freight and setting 1–3 weeks. First cleaning at six months included.' } },
+    { '@type': 'Question', name: 'Can I install year-round in Southern Utah?', acceptedAnswer: { '@type': 'Answer', text: 'In the St. George Valley — yes, year-round. Southern Utah\'s mild winters do not freeze the ground the way Northern Utah does. Cedar City, Enterprise, Central, and higher-elevation Garfield County cemeteries do experience freeze cycles and may have seasonal install windows.' } },
+    { '@type': 'Question', name: 'Do I need to be in Southern Utah for the ordering process?', acceptedAnswer: { '@type': 'Answer', text: 'No. We handle the entire process remotely for out-of-state families. Design coordination by email, sexton coordination on your behalf, freight direct to the cemetery, setting under sexton supervision, photo documentation to you. You never need to be in Southern Utah for the ordering process.' } },
+    { '@type': 'Question', name: 'What is the Southern Utah National Cemetery?', acceptedAnswer: { '@type': 'Answer', text: 'The 157th VA-operated national cemetery, dedicated September 10, 2025 in Cedar City, Utah. Located at 2181 West 1600 South, Cedar City, Utah 84720 — 45 minutes north of St. George on I-15. Free burial and government-issued marker for eligible veterans.' } },
+    { '@type': 'Question', name: 'Can I get a private custom headstone AND a VA benefit?', acceptedAnswer: { '@type': 'Answer', text: 'Yes. For veterans who died on or after November 1, 1990, the VA issues a bronze medallion that can be affixed to a private headstone in any cemetery. This allows full custom design (temple silhouettes, laser portraits, companion monuments) with VA recognition. Submit VA Form 40-1330M.' } },
+    { '@type': 'Question', name: 'How do I clean a headstone in Southern Utah?', acceptedAnswer: { '@type': 'Answer', text: 'Use a gentle non-ionic cleaner and a soft natural-bristle brush. Rinse with distilled water where practical. Never use vinegar, household descalers, or acidic cleaners on polished granite — they permanently etch the surface. Hard-water calcium responds well to non-ionic cleaner over multiple gentle applications.' } },
+  ],
+});
 
 const open = ref(null);
 function toggle(id) { open.value = open.value === id ? null : id; }
@@ -203,7 +174,7 @@ const categories = [
     name: 'Pricing',
     items: [
       { q: 'What does a headstone actually cost in Washington County?', a: 'Ranges: Flat markers $500–$1,800. Slant/bevel $700–$2,000. Upright monuments $1,200–$4,000+. Companion doubles $1,800–$9,000+. Temple engraving add-on $150–$700. Every quote is itemized — stone, apron, freight, sexton coordination, first cleaning. See our <a href="/resources/pricing" class="text-bronze font-medium underline">full pricing guide</a> for specifics.' },
-      { q: 'What\'s included in your quote?', a: 'Everything needed to have a finished monument standing at your cemetery: granite, all engraving (name, dates, temple silhouette, portrait), digital design proof, sexton coordination, required concrete apron, freight, professional setting, and first-year maintenance cleaning at six months. Nothing added at delivery.' },
+      { q: 'What\'s included in your quote?', a: 'Everything needed to have a finished monument standing at your cemetery: granite, all engraving (name, dates, temple silhouette, portrait), digital design layout, sexton coordination, required concrete apron, freight, professional setting, and first-year maintenance cleaning at six months. Nothing added at delivery.' },
       { q: 'What\'s NOT included?', a: 'Plot cost (paid directly to the city — Hurricane\'s is $550/$2,000 for example). Burial / opening & closing fees (paid to the city). Perpetual care where applicable (paid at plot purchase). Funeral home services (separate from the monument).' },
       { q: 'Do you offer payment plans?', a: 'Yes. We understand the financial strain grief brings and work with families on a case-by-case basis. Contact us directly to discuss options.' },
       { q: 'Is there a rush timeline option?', a: 'Yes. For Memorial Day or anniversary deadlines we can compress the manufacturing step by about 3 weeks for a $200–$400 add-on. Sexton approval and freight timelines are fixed and cannot be compressed further.' },
@@ -212,10 +183,10 @@ const categories = [
   {
     name: 'Timing & Process',
     items: [
-      { q: 'How long does the whole process take?', a: 'Typical timeline from your first call to a set monument: 10 to 18 weeks. Design proof in 3–5 business days after we\'ve spoken with the sexton. Approval on your pace. Manufacturing 6–12 weeks. Freight and setting 1–3 weeks. First cleaning at six months included.' },
+      { q: 'How long does the whole process take?', a: 'Typical timeline from your first call to a set monument: 10 to 18 weeks. Design layout in 3–5 business days after we\'ve spoken with the sexton. Approval on your pace. Manufacturing 6–12 weeks. Freight and setting 1–3 weeks. First cleaning at six months included.' },
       { q: 'Can I install year-round in Southern Utah?', a: 'In the St. George Valley — yes, year-round. Southern Utah\'s mild winters do not freeze the ground the way Northern Utah does. Cedar City, Enterprise, Central, and higher-elevation Garfield County cemeteries do experience freeze cycles and may have seasonal install windows. We install year-round in Washington County proper.' },
       { q: 'Can I order a headstone before a burial takes place?', a: 'Yes. Many Southern Utah families pre-purchase headstones — especially companion monuments where one spouse has passed and the other wants the stone ready. We can engrave one side now and add the second inscription later at a modest add-on.' },
-      { q: 'Do I need to be in Southern Utah for the ordering process?', a: 'No. We handle the entire process remotely for out-of-state families. Design proof by email, sexton called on your behalf, monument freighted directly to the cemetery, setting under sexton supervision, photo documentation of the completed installation sent to you.' },
+      { q: 'Do I need to be in Southern Utah for the ordering process?', a: 'No. We handle the entire process remotely for out-of-state families. Design coordination by email, sexton called on your behalf, monument freighted directly to the cemetery, setting under sexton supervision, photo documentation of the completed installation sent to you.' },
     ],
   },
   {
@@ -230,9 +201,9 @@ const categories = [
   {
     name: 'Snowbird & Out-of-State',
     items: [
-      { q: 'I\'m a snowbird — can I order a headstone from another state?', a: 'Yes. This is common for Washington County. We handle everything remotely: consultation by phone or email, digital design proof, sexton coordination on your behalf, freight direct to the cemetery, setting under sexton supervision, photo documentation to you. You never need to be in Southern Utah for the ordering process.' },
+      { q: 'I\'m a snowbird — can I order a headstone from another state?', a: 'Yes. This is common for Washington County. We handle everything remotely: consultation by phone or email, digital design layout, sexton coordination on your behalf, freight direct to the cemetery, setting under sexton supervision, photo documentation to you. You never need to be in Southern Utah for the ordering process.' },
       { q: 'Does out-of-state ordering cost more?', a: 'No. Freight to a Washington County cemetery does not add meaningful cost — the monument is being freighted regardless. Coordination is what we add and we do not upcharge it.' },
-      { q: 'Can a family member in another state coordinate for parents buried in St. George?', a: 'Yes. This is one of our most common ordering patterns. Adult children coordinate the memorial from home states while parents rest in a Washington County cemetery. Design proof by email, phone consultation, freight to the cemetery. The process is designed to work this way.' },
+      { q: 'Can a family member in another state coordinate for parents buried in St. George?', a: 'Yes. This is one of our most common ordering patterns. Adult children coordinate the memorial from home states while parents rest in a Washington County cemetery. Design coordination by email, phone consultation, freight to the cemetery. The process is designed to work this way.' },
     ],
   },
   {

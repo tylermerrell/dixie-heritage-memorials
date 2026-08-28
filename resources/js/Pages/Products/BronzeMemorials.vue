@@ -157,8 +157,10 @@ const heroImage = '/images/products/bronze-headstone.jpg';
 const gallery = [
   '/images/products/bronze-headstone.jpg',
   '/images/products/bronze-headstone-1.jpg',
-  '/images/products/bronze-headstone-2.jpg',
   '/images/products/bronze-headstone-3.jpg',
+  '/images/products/bronze-headstone-5.jpg',
+  '/images/products/bronze-headstone-6.jpg',
+  '/images/products/bronze-headstone-8.jpg',
 ];
 
 const faqs = [

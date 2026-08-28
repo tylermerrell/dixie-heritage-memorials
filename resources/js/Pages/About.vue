@@ -7,24 +7,6 @@
       <meta property="og:title" content="About St. George Memorials | Southern Utah's Cemetery-Specific Monument Company" />
       <meta property="og:description" content="Locally managed Southern Utah headstone company. We call the sexton before quoting. Cemetery approval guaranteed. Serving Washington, Iron, Kane, Beaver, and Garfield counties." />
       <meta property="og:url" content="https://stgeorgememorials.com/about" />
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "AboutPage",
-        "url": "https://stgeorgememorials.com/about",
-        "name": "About St. George Memorials",
-        "description": "St. George Memorials is a locally managed Southern Utah headstone company serving Washington, Iron, Kane, Beaver, and Garfield counties.",
-        "isPartOf": { "@id": "https://stgeorgememorials.com/#website" },
-        "about": { "@id": "https://stgeorgememorials.com/#business" },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stgeorgememorials.com/" },
-            { "@type": "ListItem", "position": 2, "name": "About", "item": "https://stgeorgememorials.com/about" }
-          ]
-        }
-      }
-      </script>
     </Head>
 
     <section class="bg-evergreen text-white py-14">
@@ -43,7 +25,7 @@
           Washington County's growth has changed what a memorial company needs to be. When the pioneer families of the 1861 Cotton Mission settled the valley — Erastus Snow leading the settlement, Jacob Hamblin building his home in Santa Clara — the burial grounds were small, communal, and governed by informal understanding. Today's cemeteries are municipal properties with codified rules that vary by block and row. Ordering a headstone in Southern Utah has become a coordination problem: sextons, section rules, plot pricing, granite specifications, foundation apron requirements, and — increasingly — VA benefit paperwork for veteran families burying at the Southern Utah National Cemetery in Cedar City.
         </p>
         <p>
-          The Southern Utah monument market has been well served by a handful of long-standing local shops. What it has been missing is a company that treats the coordination itself as the core work — one that calls the sexton before quoting the stone, sends a real digital design proof at real scale, discloses what's included and what isn't in the quote, and doesn't push families toward the more expensive option when a free VA marker is right for them.
+          The Southern Utah monument market has been well served by a handful of long-standing local shops. What it has been missing is a company that treats the coordination itself as the core work — one that calls the sexton before quoting the stone, provides real design coordination, discloses what's included and what isn't in the quote, and doesn't push families toward the more expensive option when a free VA marker is right for them.
         </p>
         <p>
           That is why St. George Memorials exists.
@@ -60,7 +42,7 @@
             <p class="text-sm font-semibold uppercase tracking-widest text-evergreen mb-3">We do</p>
             <ul class="space-y-3 text-sm text-granite">
               <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-bronze flex-shrink-0 mt-2"></span><span>Call the sexton at Tonaquint, St. George City Cemetery, Hurricane, Ivins, Santa Clara, or any Washington/Iron/Kane/Beaver/Garfield cemetery before we quote your stone.</span></li>
-              <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-bronze flex-shrink-0 mt-2"></span><span>Produce a digital design proof showing granite color, engraving layout, and any temple silhouette at exact scale — before any money changes hands.</span></li>
+              <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-bronze flex-shrink-0 mt-2"></span><span>Produce a digital design layout showing granite color, engraving layout, and any temple silhouette at exact scale — before any money changes hands.</span></li>
               <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-bronze flex-shrink-0 mt-2"></span><span>Include the concrete apron / mow strip that Tonaquint, Ivins, and most Washington County cemeteries require, in every quote.</span></li>
               <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-bronze flex-shrink-0 mt-2"></span><span>Walk veteran families through both the free VA marker path and the private-headstone-with-medallion path. We do not push toward the more expensive option.</span></li>
               <li class="flex gap-3"><span class="w-1.5 h-1.5 rounded-full bg-bronze flex-shrink-0 mt-2"></span><span>Handle the design and coordination entirely remotely for snowbird families and out-of-state relatives.</span></li>
@@ -156,6 +138,24 @@
 import { Head, Link } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import { useDesignModal } from '@/composables/useDesignModal.js';
+import { useJsonLd } from '@/composables/useJsonLd.js';
+
+useJsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  url: 'https://stgeorgememorials.com/about',
+  name: 'About St. George Memorials',
+  description: 'St. George Memorials is a locally managed Southern Utah headstone company serving Washington, Iron, Kane, Beaver, and Garfield counties.',
+  isPartOf: { '@id': 'https://stgeorgememorials.com/#website' },
+  about: { '@id': 'https://stgeorgememorials.com/#business' },
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stgeorgememorials.com/' },
+      { '@type': 'ListItem', position: 2, name: 'About', item: 'https://stgeorgememorials.com/about' },
+    ],
+  },
+});
 
 const { openModal } = useDesignModal();
 

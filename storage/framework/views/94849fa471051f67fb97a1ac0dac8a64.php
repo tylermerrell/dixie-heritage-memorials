@@ -20,10 +20,7 @@
         <!-- Global structured data: Organization + WebSite -->
         <script type="application/ld+json">
         {
-          "<?php $__contextArgs = [];
-if (context()->has($__contextArgs[0])) :
-if (isset($value)) { $__contextPrevious[] = $value; }
-$value = context()->get($__contextArgs[0]); ?>": "https://schema.org",
+          "@context": "https://schema.org",
           "@graph": [
             {
               "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
@@ -109,6 +106,15 @@ $value = context()->get($__contextArgs[0]); ?>": "https://schema.org",
             }
           ]
         }
+        </script>
+
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-K1L63B907S"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-K1L63B907S');
         </script>
 
         <!-- Fonts -->

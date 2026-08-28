@@ -99,8 +99,8 @@
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Design a Bench Memorial</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation and design proof. We confirm bench approval with the sexton before quoting.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <p class="text-white/70 text-sm mb-5">Free consultation. We confirm bench approval with the sexton before quoting.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
 
           <div class="bg-white rounded-2xl border border-stone-dark p-6">
@@ -111,7 +111,7 @@
               <li>Serpentine bench: from $5,200</li>
               <li>Bench with cremation niche: from $6,500</li>
             </ul>
-            <p class="text-xs text-granite italic mt-3">Includes design proof, foundation, freight, and sexton coordination. Delivery includes cemetery placement approval.</p>
+            <p class="text-xs text-granite italic mt-3">Includes foundation, freight, and sexton coordination. Delivery includes cemetery placement approval.</p>
           </div>
 
           <RelatedLinks :links="related" />
@@ -155,9 +155,11 @@ const heroImage = '/images/products/bench-headstone.jpg';
 
 const gallery = [
   '/images/products/bench-headstone.jpg',
+  '/images/products/bench-headstone-1.jpg',
   '/images/products/bench-headstone-2.jpg',
   '/images/products/bench-headstone-3.jpg',
   '/images/products/bench-headstone-4.jpg',
+  '/images/products/bench-headstone-5.jpg',
 ];
 
 const faqs = [

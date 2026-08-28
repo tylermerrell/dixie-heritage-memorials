@@ -32,7 +32,7 @@
             class="hidden md:flex items-center gap-2 bg-bronze hover:bg-bronze-dark text-white font-semibold px-5 py-2.5 rounded-lg transition-colors text-sm shadow"
           >
             <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536M9 13l6.5-6.5a2.121 2.121 0 013 3L12 16H9v-3z"/></svg>
-            Request a Free Design Proof
+            Request a Quote
           </button>
 
           <!-- Mobile menu toggle -->
@@ -72,7 +72,7 @@
             <button
               @click="openModal(); mobileOpen = false"
               class="w-full bg-bronze text-white font-semibold px-4 py-2.5 rounded-lg text-sm"
-            >Request a Free Design Proof</button>
+            >Request a Quote</button>
           </li>
         </ul>
       </div>

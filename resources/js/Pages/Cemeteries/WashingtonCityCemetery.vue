@@ -124,8 +124,8 @@
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Order a Headstone for Washington City</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation. Design proof before any payment.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <p class="text-white/70 text-sm mb-5">Free consultation. We verify before any payment.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
@@ -203,7 +203,7 @@ const pricing = [
 const steps = [
   { title: 'Identify your section', body: 'Historic sections carry different design context than newer expansions. We verify your plot with the city clerk before quoting.' },
   { title: 'We contact the city clerk', body: '24-hour notice, current dimensions rules, and any section-specific approvals confirmed before production.' },
-  { title: 'You approve a design proof', body: 'For plots in historic sections, we include neighboring-stone photo review so the new monument fits its context. Written approval starts production.' },
+  { title: 'You approve a design layout', body: 'For plots in historic sections, we include neighboring-stone photo review so the new monument fits its context. Written approval starts production.' },
   { title: 'Manufacturing and freight', body: 'Typical lead time from proof approval is 8–16 weeks. Year-round installation window.' },
   { title: 'Foundation and setting', body: 'Concrete apron poured, setting coordinated with the city clerk, first cleaning at six months included.' },
 ];

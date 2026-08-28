@@ -159,6 +159,7 @@ const gallery = [
   '/images/products/civic-monument.jpg',
   '/images/products/civic-monument-1.jpg',
   '/images/products/civic-monument-2.jpg',
+  '/images/products/civic-monument-3.jpg',
   '/images/products/civic-monumnet-4.jpg',
 ];
 

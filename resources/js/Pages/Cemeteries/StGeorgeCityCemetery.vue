@@ -7,55 +7,6 @@
       <meta property="og:title" content="St. George City Cemetery — Pioneer Cemetery Guide & Headstone Rules" />
       <meta property="og:description" content="The 1861 Cotton Mission burial ground in downtown St. George. Plat layout, current rules, headstone approvals, and pioneer history." />
       <meta property="og:url" content="https://stgeorgememorials.com/cemeteries/st-george-city-cemetery" />
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Cemetery",
-            "@id": "https://stgeorgememorials.com/cemeteries/st-george-city-cemetery#place",
-            "name": "St. George City Cemetery",
-            "description": "The oldest continuously used cemetery in Washington County, established in 1861 as part of Brigham Young's Cotton Mission. Located in downtown St. George, it holds the founders of the city and the builders of the first Utah temple.",
-            "url": "https://stgeorgememorials.com/cemeteries/st-george-city-cemetery",
-            "address": {
-              "@type": "PostalAddress",
-              "streetAddress": "650 E. Tabernacle St.",
-              "addressLocality": "St. George",
-              "addressRegion": "UT",
-              "postalCode": "84770",
-              "addressCountry": "US"
-            },
-            "geo": {
-              "@type": "GeoCoordinates",
-              "latitude": 37.1041,
-              "longitude": -113.5722
-            },
-            "foundingDate": "1861",
-            "containedInPlace": {
-              "@type": "City",
-              "name": "St. George",
-              "containedInPlace": { "@type": "State", "name": "Utah" }
-            }
-          },
-          {
-            "@type": "WebPage",
-            "url": "https://stgeorgememorials.com/cemeteries/st-george-city-cemetery",
-            "name": "St. George City Cemetery — Pioneer Cemetery Guide, Plats & Rules",
-            "description": "A family's guide to the historic St. George City Cemetery — the 1861 Cotton Mission burial ground.",
-            "isPartOf": { "@id": "https://stgeorgememorials.com/#website" },
-            "about": { "@id": "https://stgeorgememorials.com/cemeteries/st-george-city-cemetery#place" },
-            "breadcrumb": {
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stgeorgememorials.com/" },
-                { "@type": "ListItem", "position": 2, "name": "Cemeteries", "item": "https://stgeorgememorials.com/cemeteries" },
-                { "@type": "ListItem", "position": 3, "name": "St. George City Cemetery", "item": "https://stgeorgememorials.com/cemeteries/st-george-city-cemetery" }
-              ]
-            }
-          }
-        ]
-      }
-      </script>
     </Head>
 
     <section class="bg-evergreen text-white py-14">
@@ -205,8 +156,8 @@
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Order a Headstone for St. George City Cemetery</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation. We contact the sexton, verify your plat, and send a design proof before any payment is due.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <p class="text-white/70 text-sm mb-5">Free consultation. We contact the sexton, verify your plat, and send a design layout before any payment is due.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
@@ -241,6 +192,51 @@ import { Head, Link } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import RelatedLinks from '@/Components/RelatedLinks.vue';
 import { useDesignModal } from '@/composables/useDesignModal.js';
+import { useJsonLd } from '@/composables/useJsonLd.js';
+
+useJsonLd({
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'Cemetery',
+      '@id': 'https://stgeorgememorials.com/cemeteries/st-george-city-cemetery#place',
+      name: 'St. George City Cemetery',
+      description: "The oldest continuously used cemetery in Washington County, established in 1861 as part of Brigham Young's Cotton Mission. Located in downtown St. George, it holds the founders of the city and the builders of the first Utah temple.",
+      url: 'https://stgeorgememorials.com/cemeteries/st-george-city-cemetery',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '650 E. Tabernacle St.',
+        addressLocality: 'St. George',
+        addressRegion: 'UT',
+        postalCode: '84770',
+        addressCountry: 'US',
+      },
+      geo: { '@type': 'GeoCoordinates', latitude: 37.1041, longitude: -113.5722 },
+      foundingDate: '1861',
+      containedInPlace: {
+        '@type': 'City',
+        name: 'St. George',
+        containedInPlace: { '@type': 'State', name: 'Utah' },
+      },
+    },
+    {
+      '@type': 'WebPage',
+      url: 'https://stgeorgememorials.com/cemeteries/st-george-city-cemetery',
+      name: 'St. George City Cemetery — Pioneer Cemetery Guide, Plats & Rules',
+      description: "A family's guide to the historic St. George City Cemetery — the 1861 Cotton Mission burial ground.",
+      isPartOf: { '@id': 'https://stgeorgememorials.com/#website' },
+      about: { '@id': 'https://stgeorgememorials.com/cemeteries/st-george-city-cemetery#place' },
+      breadcrumb: {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stgeorgememorials.com/' },
+          { '@type': 'ListItem', position: 2, name: 'Cemeteries', item: 'https://stgeorgememorials.com/cemeteries' },
+          { '@type': 'ListItem', position: 3, name: 'St. George City Cemetery', item: 'https://stgeorgememorials.com/cemeteries/st-george-city-cemetery' },
+        ],
+      },
+    },
+  ],
+});
 
 const { openModal } = useDesignModal();
 const lightboxIndex = ref(null);
@@ -295,7 +291,7 @@ const steps = [
     body: 'We contact the St. George City Sexton\'s office directly and confirm the current rules for your specific plat, including height maximum, spacing from neighboring stones, and any historic-sensitivity notes.',
   },
   {
-    title: 'Site photo and design proof',
+    title: 'Site photo and design layout',
     body: 'We ask for or take a site photo of your specific plot showing neighboring stones. Your digital proof shows the new monument at scale against those neighbors so nothing feels out of place. You approve before we cut.',
   },
   {

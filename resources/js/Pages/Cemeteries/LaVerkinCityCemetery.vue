@@ -128,8 +128,8 @@
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Order a Headstone for LaVerkin</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation. We call the city office to confirm rules before we start. You approve the design proof before any payment is due.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <p class="text-white/70 text-sm mb-5">Free consultation. We call the city office to confirm rules before we start. You approve the design layout before any payment is due.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
@@ -195,7 +195,7 @@ const pricing = [
 const steps = [
   { title: 'Confirm your section', body: 'Let us know exactly where in LaVerkin your loved one is buried. Rules vary by section, so we confirm what the city will allow before design begins.' },
   { title: 'We call the city office', body: 'We contact the La Verkin City Office directly at (435) 635-2581 and confirm current requirements in writing.' },
-  { title: 'Approve a design proof', body: 'You receive a digital proof showing exact dimensions, engraving layout, granite color, and any custom artwork. Nothing goes to production without your written sign-off.' },
+  { title: 'Approve a design layout', body: 'You receive a digital proof showing exact dimensions, engraving layout, granite color, and any custom artwork. Nothing goes to production without your written sign-off.' },
   { title: 'Manufacturing and freight', body: 'The monument is manufactured, engraved, and freighted to LaVerkin. Typical lead time is 8–16 weeks from design approval. Southern Utah\'s mild winters mean year-round installation.' },
   { title: 'Concrete apron and setting', body: 'We pour the required concrete apron, coordinate the setting appointment, and confirm placement with the city. First maintenance cleaning included at six months.' },
 ];

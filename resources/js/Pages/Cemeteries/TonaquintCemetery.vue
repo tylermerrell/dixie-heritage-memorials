@@ -189,8 +189,8 @@
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Order a Headstone for Tonaquint</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation. We call the sexton before we start. You approve the design proof before any payment is due.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <p class="text-white/70 text-sm mb-5">Free consultation. We call the sexton before we start. You approve the design layout before any payment is due.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
@@ -279,7 +279,7 @@ const steps = [
     body: 'We contact the St. George City Sexton\'s office directly and confirm current height maximums, base requirements, and the 24-hour notice window. Everything we quote is what the sexton has confirmed in writing.',
   },
   {
-    title: 'You approve a design proof',
+    title: 'You approve a design layout',
     body: 'You receive a digital proof showing exact dimensions, engraving layout, granite color, and any custom artwork — including St. George Utah Temple or Red Cliffs Utah Temple silhouettes if you choose them. Nothing goes to production without your written sign-off.',
   },
   {
@@ -315,7 +315,7 @@ const faqs = [
   },
   {
     q: 'How long does the whole process take?',
-    a: 'From your first call to a set monument, typical timeline is 10–18 weeks. Design proof is usually within 5 business days. Manufacturing and freight is the longest step. Southern Utah\'s year-round install window means we don\'t have the November-to-March freeze delays that Northern Utah cemeteries impose.',
+    a: 'From your first call to a set monument, typical timeline is 10–18 weeks. Design layout is usually within 5 business days. Manufacturing and freight is the longest step. Southern Utah\'s year-round install window means we don\'t have the November-to-March freeze delays that Northern Utah cemeteries impose.',
   },
 ];
 

@@ -109,8 +109,8 @@
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Order a Headstone for Cedar City</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation. Design proof before any payment.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <p class="text-white/70 text-sm mb-5">Free consultation. We verify before any payment.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
@@ -181,7 +181,7 @@ const pricing = [
 const steps = [
   { title: 'Confirm your section', body: 'Cedar City has both historic and modern sections with different rules. We verify with the city clerk.' },
   { title: 'We contact the city clerk', body: 'The 24-hour notice, current dimensions rules, and any special approvals confirmed before production.' },
-  { title: 'Design proof', body: 'Digital proof shows exact dimensions and engraving — including Cedar City Utah Temple silhouettes if you choose.' },
+  { title: 'Design layout', body: 'Digital layout shows exact dimensions and engraving — including Cedar City Utah Temple silhouettes if you choose.' },
   { title: 'Manufacturing and freight', body: 'Typical lead time 8–16 weeks. March–November installation window for concrete pours.' },
   { title: 'Foundation and setting', body: 'Deeper frost-line foundation, setting coordinated with city clerk, first cleaning included at six months.' },
 ];

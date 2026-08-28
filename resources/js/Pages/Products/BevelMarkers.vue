@@ -100,8 +100,8 @@
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Design a Bevel Marker</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation and design proof. We verify your cemetery's rules before we quote.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <p class="text-white/70 text-sm mb-5">Free consultation. We verify your cemetery's rules before we quote.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
 
           <div class="bg-white rounded-2xl border border-stone-dark p-6">
@@ -112,7 +112,7 @@
               <li>Companion 10" × 44": from $1,300</li>
               <li>Extended companion 12" × 60": from $1,700</li>
             </ul>
-            <p class="text-xs text-granite italic mt-3">Includes design proof, foundation, freight, and sexton coordination.</p>
+            <p class="text-xs text-granite italic mt-3">Includes foundation, freight, and sexton coordination.</p>
           </div>
 
           <RelatedLinks :links="related" />
@@ -152,13 +152,15 @@ import { useDesignModal } from '@/composables/useDesignModal.js';
 const { openModal } = useDesignModal();
 const lightboxIndex = ref(null);
 
-const heroImage = '/images/products/bevled-headstone.jpg';
+const heroImage = '/images/products/bevel-headstone.jpg';
 
 const gallery = [
-  '/images/products/bevled-headstone.jpg',
-  '/images/products/flat-headstone.jpg',
-  '/images/products/flat-headstone-2.jpg',
+  '/images/products/bevel-headstone.jpg',
+  '/images/products/bevel-headstone-1.jpg',
+  '/images/products/bevel-headstone-2.jpg',
   '/images/products/slant-headstone.jpg',
+  '/images/products/slant-headstone-2.jpg',
+  '/images/products/flat-headstone.jpg',
 ];
 
 const faqs = [

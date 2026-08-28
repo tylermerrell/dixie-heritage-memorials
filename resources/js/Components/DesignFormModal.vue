@@ -13,7 +13,7 @@
       <div class="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden max-h-[90vh] flex flex-col">
         <!-- Header -->
         <div class="bg-evergreen px-8 py-6 flex-shrink-0">
-          <h2 id="modal-title" class="font-serif text-2xl text-white">Request a Free Design Proof</h2>
+          <h2 id="modal-title" class="font-serif text-2xl text-white">Request a Quote</h2>
           <p class="text-white/80 text-sm mt-1">A local specialist will follow up within one business day.</p>
           <button
             @click="$emit('close')"
@@ -92,7 +92,7 @@
             :disabled="form.processing"
             class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors disabled:opacity-60"
           >
-            {{ form.processing ? 'Sending...' : 'Request My Free Design Proof' }}
+            {{ form.processing ? 'Sending...' : 'Request a Quote' }}
           </button>
 
           <p class="text-center text-xs text-granite">No payment required. We contact you to finalize details.</p>

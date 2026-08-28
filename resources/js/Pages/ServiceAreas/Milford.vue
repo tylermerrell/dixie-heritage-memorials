@@ -84,6 +84,21 @@
             <p>Milford is 115 minutes north of our St. George shop via I-15 and SR-21. Freight is higher because of the distance. We consolidate Milford with Beaver and Minersville installations whenever possible to reduce cost. Lead time is 12–22 weeks with foundation-pour scheduling around freeze forecasts.</p>
           </div>
 
+
+          <div class="bg-white rounded-2xl border border-stone-dark p-6">
+            <h2 class="font-serif text-xl font-semibold text-evergreen mb-1">Memorial Style Examples</h2>
+            <p class="text-granite text-sm mb-4">Headstone styles we craft for Milford families — verified against local cemetery rules before production. Tap any image to enlarge.</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              <button
+                v-for="(img, i) in gallery"
+                :key="img"
+                class="aspect-[4/3] overflow-hidden rounded-xl bg-stone hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-bronze"
+                @click="lightboxIndex = i"
+              >
+                <img :src="img" :alt="`Headstone and monument example for Milford`" class="w-full h-full object-cover" />
+              </button>
+            </div>
+          </div>
           <div class="bg-white rounded-2xl border border-stone-dark p-8">
             <h2 class="font-serif text-2xl font-semibold text-evergreen mb-6">Frequently Asked Questions — Milford</h2>
             <div class="space-y-5">
@@ -100,23 +115,44 @@
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Design a Milford Memorial</h3>
             <p class="text-white/70 text-sm mb-5">Free consultation. Railroad-heritage and ranching-motif custom designs available.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
 
       </div>
     </section>
+
+    <Teleport to="body">
+      <div
+        v-if="lightboxIndex !== null"
+        class="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+        @click.self="lightboxIndex = null"
+      >
+        <button class="absolute top-4 right-4 text-white/70 hover:text-white p-2" @click="lightboxIndex = null" aria-label="Close">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <button v-if="lightboxIndex > 0" class="absolute left-4 text-white/70 hover:text-white p-2" @click="lightboxIndex--" aria-label="Previous">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <img :src="gallery[lightboxIndex]" alt="Memorial style example" class="max-h-[90vh] max-w-full rounded-lg object-contain" />
+        <button v-if="lightboxIndex < gallery.length - 1" class="absolute right-4 text-white/70 hover:text-white p-2" @click="lightboxIndex++" aria-label="Next">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </Teleport>
   </AppLayout>
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import { Head, Link } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import RelatedLinks from '@/Components/RelatedLinks.vue';
 import { useDesignModal } from '@/composables/useDesignModal.js';
 
 const { openModal } = useDesignModal();
+const lightboxIndex = ref(null);
 
 const cemeteries = [
   { name: 'Milford Cemetery', note: 'City-administered, railroad heritage', href: '/cemeteries/milford-cemetery' },
@@ -160,5 +196,13 @@ const related = [
   { label: 'Custom Engraving', href: '/headstones/custom-engraving' },
   { label: 'Bronze / VA Markers', href: '/headstones/bronze-memorials' },
   { label: 'All Beaver County Cemeteries', href: '/cemeteries' },
+];
+const gallery = [
+  '/images/products/upright-headstones-6.jpg',
+  '/images/products/upright-headstones-8.jpg',
+  '/images/products/flat-headstone.jpg',
+  '/images/products/bevel-headstone-1.jpg',
+  '/images/products/bronze-headstone-1.jpg',
+  '/images/products/bench-headstone-3.jpg',
 ];
 </script>

@@ -35,7 +35,7 @@
               <li><strong>Do you manufacture and set locally, or freight from Salt Lake / Provo / out of state?</strong> Locally isn't better inherently — but "the stone comes down I-15 on a route" changes cost accounting. Verify what "installed price" actually includes: freight to your Southern Utah cemetery, sexton coordination, setting labor, and any regional freight surcharge.</li>
               <li><strong>What granite are you recommending, and does it hold up in the desert?</strong> Marble and lighter salt-and-pepper granites weather much faster in Washington County's UV and hard water than in Northern Utah. Jet black, midnight black, and Dakota Mahogany polished granites are the desert-durable choices. If a competitor recommends marble for St. George, ask why.</li>
               <li><strong>What's the veteran path if my loved one served?</strong> The VA marker is <em>free</em>. A provider that pushes a paid custom monument on a family that qualifies for a free VA-issued marker at Southern Utah National Cemetery is not acting in the family's interest. Both paths (free VA marker at SUNC, or private stone with VA medallion) are valid — a good provider walks through both without pressure.</li>
-              <li><strong>Can I see a design proof at exact scale before any money moves?</strong> A digital proof at real scale showing the actual granite color, layout, and any temple or portrait engraving is the standard. Companies that ask for deposits before producing a proof are not aligned with your interests.</li>
+              <li><strong>Can I see a design layout at exact scale before any money moves?</strong> A digital proof at real scale showing the actual granite color, layout, and any temple or portrait engraving is the standard. Companies that ask for deposits before producing a proof are not aligned with your interests.</li>
             </ol>
           </div>
 
@@ -107,7 +107,7 @@
             <p>Advertised prices vary widely across these companies. The most reliable comparison is not sticker price but <em>total installed price</em> at your specific Washington County cemetery, including:</p>
             <ul>
               <li>Stone with all engraving (name, dates, epitaph, symbols, temple silhouette)</li>
-              <li>Digital design proof at real scale</li>
+              <li>Digital design layout at real scale</li>
               <li>Sexton coordination and cemetery permit / approval</li>
               <li>Required concrete apron / mow strip (Tonaquint, Ivins, Hurricane, and most municipal cemeteries)</li>
               <li>Freight to your specific cemetery</li>
@@ -122,7 +122,7 @@
           <div class="bg-white rounded-2xl border border-stone-dark p-8 prose-custom">
             <h2>Getting a second opinion</h2>
             <p>You are never legally required to buy from a specific provider. The FTC Funeral Rule specifically protects your right to shop for a monument independently of the funeral home handling arrangements, without penalty. Getting a second opinion — from any of the companies above, including ours — costs nothing and takes only a few days.</p>
-            <p>If you've already received a quote or design proof from another provider, we're happy to review it. We'll tell you honestly if the quote is fair for the market, whether it includes what needs to be included, and whether the recommended granite is appropriate for Southern Utah's climate. If the answer is that the other quote is good, we say so.</p>
+            <p>If you've already received a quote or design layout from another provider, we're happy to review it. We'll tell you honestly if the quote is fair for the market, whether it includes what needs to be included, and whether the recommended granite is appropriate for Southern Utah's climate. If the answer is that the other quote is good, we say so.</p>
           </div>
 
           <!-- External Resources -->
@@ -137,29 +137,76 @@
             </ul>
           </div>
 
+          <div class="bg-white rounded-2xl border border-stone-dark p-6">
+            <h2 class="font-serif text-xl font-semibold text-evergreen mb-1">Memorial Style Examples</h2>
+            <p class="text-granite text-sm mb-4">Headstone styles from our production — verified against Southern Utah cemetery rules before any stone is cut. Compare these to what you see quoted elsewhere. Tap any image to enlarge.</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              <button
+                v-for="(img, i) in gallery"
+                :key="img"
+                class="aspect-[4/3] overflow-hidden rounded-xl bg-stone hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-bronze"
+                @click="lightboxIndex = i"
+              >
+                <img :src="img" :alt="`Headstone example ${i + 1}`" class="w-full h-full object-cover" />
+              </button>
+            </div>
+          </div>
+
         </div>
 
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Get a Second-Opinion Quote</h3>
-            <p class="text-white/70 text-sm mb-5">Have a quote from another provider? Send it over. We'll review it honestly — including telling you if it's the right choice for your family. Free design proof and price comparison.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <p class="text-white/70 text-sm mb-5">Have a quote from another provider? Send it over. We'll review it honestly — including telling you if it's the right choice for your family. and price comparison.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
 
       </div>
     </section>
+    <Teleport to="body">
+      <div
+        v-if="lightboxIndex !== null"
+        class="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+        @click.self="lightboxIndex = null"
+      >
+        <button class="absolute top-4 right-4 text-white/70 hover:text-white p-2" @click="lightboxIndex = null" aria-label="Close">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <button v-if="lightboxIndex > 0" class="absolute left-4 text-white/70 hover:text-white p-2" @click="lightboxIndex--" aria-label="Previous">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <img :src="gallery[lightboxIndex]" alt="Headstone example" class="max-h-[90vh] max-w-full rounded-lg object-contain" />
+        <button v-if="lightboxIndex < gallery.length - 1" class="absolute right-4 text-white/70 hover:text-white p-2" @click="lightboxIndex++" aria-label="Next">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </Teleport>
   </AppLayout>
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import { Head } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import RelatedLinks from '@/Components/RelatedLinks.vue';
 import { useDesignModal } from '@/composables/useDesignModal.js';
 
 const { openModal } = useDesignModal();
+const lightboxIndex = ref(null);
+
+const gallery = [
+  '/images/products/upright-headstones-8.jpg',
+  '/images/products/upright-headstones-9.jpg',
+  '/images/products/flat-headstone-3.jpg',
+  '/images/products/slant-headstone-6.jpg',
+  '/images/products/bronze-headstone-6.jpg',
+  '/images/products/bevel-headstone-2.jpg',
+  '/images/products/upright-headstones-10.jpg',
+  '/images/products/bench-headstone-2.jpg',
+  '/images/products/slant-headstone-7.jpg',
+];
 
 const related = [
   { label: 'Southern Utah Buying Guide', href: '/resources/buying-guide' },

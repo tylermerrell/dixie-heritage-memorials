@@ -100,7 +100,7 @@
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Order a Headstone for New Harmony</h3>
             <p class="text-white/70 text-sm mb-5">Free consultation. Direct coordination with community stewards.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
@@ -171,7 +171,7 @@ const pricing = [
 const steps = [
   { title: 'Confirm the plot', body: 'We coordinate with community stewards or Washington County to verify plot records before quoting.' },
   { title: 'Verify local rules', body: 'Small-community coordination — we\'re respectful of the informal stewardship structure.' },
-  { title: 'Design proof', body: 'Digital proof shows exact dimensions and engraving. For pioneer plots, neighboring-stone context reviewed.' },
+  { title: 'Design layout', body: 'Digital layout shows exact dimensions and engraving. For pioneer plots, neighboring-stone context reviewed.' },
   { title: 'Manufacturing and freight', body: 'Typical lead time 8–16 weeks. Installation March–November preferred.' },
   { title: 'Foundation and setting', body: 'Deeper frost-line pour, monument set with community coordination, first cleaning included.' },
 ];

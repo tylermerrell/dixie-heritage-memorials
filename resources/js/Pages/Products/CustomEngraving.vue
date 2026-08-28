@@ -106,8 +106,8 @@
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Design Your Engraving</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation. We show every engraving element at exact scale on the design proof — nothing is a surprise.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <p class="text-white/70 text-sm mb-5">Free consultation. We show every engraving element at exact scale — nothing is a surprise.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
 
           <div class="bg-white rounded-2xl border border-stone-dark p-6">
@@ -170,6 +170,8 @@ const gallery = [
   '/images/products/upright-headstones-8.jpg',
   '/images/products/bronze-headstone.jpg',
   '/images/products/flat-baby-headstone.jpg',
+  '/images/products/slant-headstone-3.jpg',
+  '/images/products/bevel-headstone-1.jpg',
 ];
 
 const faqs = [

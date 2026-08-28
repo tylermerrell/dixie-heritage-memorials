@@ -2,43 +2,13 @@
   <AppLayout>
     <Head>
       <title>St. George Headstones & Southern Utah Monuments | St. George Memorials</title>
-      <meta name="description" content="Custom headstones for every Washington County cemetery — Tonaquint, St. George City, Hurricane, Ivins, Santa Clara, and beyond. St. George and Red Cliffs Temple engravings. VA marker help for Southern Utah National Cemetery. Free design proof." />
+      <meta name="description" content="Custom headstones for every Washington County cemetery — Tonaquint, St. George City, Hurricane, Ivins, Santa Clara, and beyond. St. George and Red Cliffs Temple engravings. VA marker help for Southern Utah National Cemetery." />
       <link rel="canonical" href="https://stgeorgememorials.com/" />
       <meta property="og:title" content="St. George Headstones & Southern Utah Monuments | St. George Memorials" />
-      <meta property="og:description" content="Custom headstones for every Washington County cemetery. Temple engravings, VA markers, snowbird ordering. Cemetery approval guaranteed. Free design proof." />
+      <meta property="og:description" content="Custom headstones for every Washington County cemetery. Temple engravings, VA markers, snowbird ordering. Cemetery approval guaranteed." />
       <meta property="og:url" content="https://stgeorgememorials.com/" />
       <meta name="twitter:title" content="St. George Headstones & Southern Utah Monuments | St. George Memorials" />
-      <meta name="twitter:description" content="Custom headstones for every Washington County cemetery. Temple engravings, VA markers. Free design proof." />
-      <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebPage",
-        "@id": "https://stgeorgememorials.com/#webpage",
-        "url": "https://stgeorgememorials.com/",
-        "name": "St. George Headstones & Southern Utah Monuments | St. George Memorials",
-        "description": "Custom headstones for every Washington County cemetery. Cemetery approval guaranteed. Free design proof.",
-        "isPartOf": { "@id": "https://stgeorgememorials.com/#website" },
-        "about": { "@id": "https://stgeorgememorials.com/#business" },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://stgeorgememorials.com/" }
-          ]
-        },
-        "mainEntity": {
-          "@type": "ItemList",
-          "name": "Memorial Products",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "url": "https://stgeorgememorials.com/headstones/upright-monuments", "name": "Upright Monuments" },
-            { "@type": "ListItem", "position": 2, "url": "https://stgeorgememorials.com/headstones/flat-markers", "name": "Flat Grave Markers" },
-            { "@type": "ListItem", "position": 3, "url": "https://stgeorgememorials.com/headstones/st-george-temple-headstones", "name": "St. George Temple Engravings" },
-            { "@type": "ListItem", "position": 4, "url": "https://stgeorgememorials.com/headstones/red-cliffs-temple-headstones", "name": "Red Cliffs Temple Engravings" },
-            { "@type": "ListItem", "position": 5, "url": "https://stgeorgememorials.com/headstones/bronze-memorials", "name": "Bronze VA Markers" },
-            { "@type": "ListItem", "position": 6, "url": "https://stgeorgememorials.com/headstones/companion-headstones", "name": "Companion Headstones" }
-          ]
-        }
-      }
-      </script>
+      <meta name="twitter:description" content="Custom headstones for every Washington County cemetery. Temple engravings, VA markers." />
     </Head>
 
     <!-- Hero -->
@@ -63,7 +33,7 @@
               class="inline-flex items-center justify-center gap-2 bg-bronze hover:bg-bronze-dark text-white font-semibold px-8 py-4 rounded-lg transition-colors text-base shadow-lg"
             >
               <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536M9 13l6.5-6.5a2.121 2.121 0 013 3L12 16H9v-3z"/></svg>
-              Request a Free Design Proof
+              Request a Quote
             </button>
             <Link href="/cemeteries" class="inline-flex items-center justify-center gap-2 border border-white/30 hover:border-white/60 text-white font-medium px-8 py-4 rounded-lg transition-colors text-base">
               Browse Cemetery Guides
@@ -76,7 +46,7 @@
             </span>
             <span class="flex items-center gap-2">
               <svg class="w-4 h-4 text-bronze" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-              Free design proof, no obligation
+              Free consultation, no obligation
             </span>
             <span class="flex items-center gap-2">
               <svg class="w-4 h-4 text-bronze" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
@@ -134,7 +104,7 @@
                 </div>
                 <div>
                   <p class="font-semibold text-evergreen mb-1">You approve the proof before we cut anything</p>
-                  <p class="text-granite text-sm leading-relaxed">A digital design proof shows the exact granite color, layout, engraving, and any temple silhouette at real scale. No production, no invoice, and no pressure until you sign off in writing.</p>
+                  <p class="text-granite text-sm leading-relaxed">A digital design layout shows the exact granite color, layout, engraving, and any temple silhouette at real scale. No production, no invoice, and no pressure until you sign off in writing.</p>
                 </div>
               </li>
             </ul>
@@ -283,7 +253,7 @@
         <p class="text-sage-light text-sm font-semibold uppercase tracking-widest mb-3">For Snowbird & Part-Year Families</p>
         <h2 class="font-serif text-3xl sm:text-4xl font-semibold mb-5">Ordering From Out of State? We Handle the Coordination.</h2>
         <p class="text-white/70 leading-relaxed mb-8">
-          Washington County is a top-ten US snowbird destination. Families often split the year between St. George and home states — Idaho, California, Nevada, Oregon. When death happens, the coordination across state lines is a real pain point that Northern Utah shops rarely handle well. We do this every week. We manage the design proof by email, coordinate the sexton entirely by phone, and freight the finished monument to the cemetery. You never have to be in Southern Utah for the ordering process.
+          Washington County is a top-ten US snowbird destination. Families often split the year between St. George and home states — Idaho, California, Nevada, Oregon. When death happens, the coordination across state lines is a real pain point that Northern Utah shops rarely handle well. We do this every week. We manage the design coordination by email, coordinate the sexton entirely by phone, and freight the finished monument to the cemetery. You never have to be in Southern Utah for the ordering process.
         </p>
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
           <div class="bg-white/5 rounded-xl p-5">
@@ -340,13 +310,13 @@
     <!-- Final CTA -->
     <section class="py-20 bg-evergreen-deeper text-white text-center">
       <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 class="font-serif text-3xl sm:text-4xl font-semibold mb-5">Start With a Free Design Proof</h2>
+        <h2 class="font-serif text-3xl sm:text-4xl font-semibold mb-5">Request a Quote</h2>
         <p class="text-white/70 text-lg mb-8">Tell us the cemetery, the section if you know it, and a few details about your loved one. A Southern Utah specialist reaches out within one business day with cemetery-verified options and transparent pricing. No cost. No obligation.</p>
         <button
           @click="openModal"
           class="inline-flex items-center justify-center gap-2 bg-bronze hover:bg-bronze-dark text-white font-semibold px-10 py-4 rounded-lg transition-colors text-base shadow-xl"
         >
-          Request a Free Design Proof
+          Request a Quote
         </button>
         <p class="text-white/40 text-sm mt-4">Or call us directly: <a href="tel:+14352543122" class="text-white/60 hover:text-white underline">(435) 254-3122</a></p>
       </div>
@@ -358,6 +328,36 @@
 import { Head, Link } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import { useDesignModal } from '@/composables/useDesignModal.js';
+import { useJsonLd } from '@/composables/useJsonLd.js';
+
+useJsonLd({
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  '@id': 'https://stgeorgememorials.com/#webpage',
+  url: 'https://stgeorgememorials.com/',
+  name: 'St. George Headstones & Southern Utah Monuments | St. George Memorials',
+  description: 'Custom headstones for every Washington County cemetery. Cemetery approval guaranteed.',
+  isPartOf: { '@id': 'https://stgeorgememorials.com/#website' },
+  about: { '@id': 'https://stgeorgememorials.com/#business' },
+  breadcrumb: {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://stgeorgememorials.com/' },
+    ],
+  },
+  mainEntity: {
+    '@type': 'ItemList',
+    name: 'Memorial Products',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, url: 'https://stgeorgememorials.com/headstones/upright-monuments', name: 'Upright Monuments' },
+      { '@type': 'ListItem', position: 2, url: 'https://stgeorgememorials.com/headstones/flat-markers', name: 'Flat Grave Markers' },
+      { '@type': 'ListItem', position: 3, url: 'https://stgeorgememorials.com/headstones/st-george-temple-headstones', name: 'St. George Temple Engravings' },
+      { '@type': 'ListItem', position: 4, url: 'https://stgeorgememorials.com/headstones/red-cliffs-temple-headstones', name: 'Red Cliffs Temple Engravings' },
+      { '@type': 'ListItem', position: 5, url: 'https://stgeorgememorials.com/headstones/bronze-memorials', name: 'Bronze VA Markers' },
+      { '@type': 'ListItem', position: 6, url: 'https://stgeorgememorials.com/headstones/companion-headstones', name: 'Companion Headstones' },
+    ],
+  },
+});
 
 const { openModal } = useDesignModal();
 
@@ -375,7 +375,7 @@ const steps = [
   {
     number: 3,
     title: 'You approve the proof',
-    description: 'A digital design proof at real scale, showing granite color, engraving layout, and any temple or portrait detail. Nothing goes to production without your written sign-off.',
+    description: 'We coordinate the design, verify cemetery rules, and provide an itemized quote. Nothing goes to production without your written sign-off.',
   },
   {
     number: 4,
@@ -395,7 +395,7 @@ const stats = [
   { value: '30+', label: 'Southern Utah cemeteries with dedicated guides' },
   { value: '2', label: 'LDS temples we engrave in Washington County' },
   { value: '5', label: 'Counties served — Washington, Iron, Kane, Beaver, Garfield' },
-  { value: 'Free', label: 'Design proof and sexton verification' },
+  { value: 'Free', label: 'Sexton verification included' },
 ];
 
 const productCategories = [

@@ -157,8 +157,11 @@ const heroImage = '/images/products/flat-headstone-3.jpg';
 const gallery = [
   '/images/products/flat-headstone-3.jpg',
   '/images/products/flat-headstone.jpg',
+  '/images/products/flat-headstone-1.jpg',
   '/images/products/flat-headstone-2.jpg',
   '/images/products/upright-headstones.jpg',
+  '/images/products/upright-headstones-1.jpg',
+  '/images/products/upright-headstones-2.jpg',
 ];
 
 const faqs = [

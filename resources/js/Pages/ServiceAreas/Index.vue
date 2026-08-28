@@ -48,9 +48,9 @@
     <section class="py-14 bg-white border-t border-stone-dark">
       <div class="max-w-3xl mx-auto px-4 text-center">
         <h2 class="font-serif text-2xl font-semibold text-evergreen mb-3">Snowbird? Out of State?</h2>
-        <p class="text-granite mb-6">Many of our Washington County families split the year between St. George and home states. We handle the entire design and coordination remotely — no cemetery visits required. Digital design proof, sexton called on your behalf, monument freighted directly to the plot.</p>
+        <p class="text-granite mb-6">Many of our Washington County families split the year between St. George and home states. We handle the entire design and coordination remotely — no cemetery visits required. Digital design layout, sexton called on your behalf, monument freighted directly to the plot.</p>
         <button @click="openModal" class="bg-evergreen hover:bg-evergreen-light text-white font-semibold px-8 py-3 rounded-lg transition-colors">
-          Request a Free Design Proof
+          Request a Quote
         </button>
       </div>
     </section>

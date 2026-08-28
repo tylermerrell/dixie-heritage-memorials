@@ -55,7 +55,7 @@
             <h2>4. Timeline — and why Southern Utah installs year-round</h2>
             <p>Typical timeline from your first call to a set monument in Washington County: 10 to 18 weeks.</p>
             <ul>
-              <li><strong>Design proof:</strong> 3–5 business days after we've spoken with the sexton.</li>
+              <li><strong>Design layout:</strong> 3–5 business days after we've spoken with the sexton.</li>
               <li><strong>Proof approval:</strong> your pace. Some families take a week; some take three months. Nothing goes to production until you sign off in writing.</li>
               <li><strong>Manufacture and laser etch:</strong> 6–12 weeks depending on granite availability and engraving complexity. Temple silhouettes and photorealistic laser etches take the longer end of that range.</li>
               <li><strong>Freight and setting:</strong> 1–3 weeks. We coordinate with the sexton on the exact setting appointment.</li>
@@ -78,6 +78,21 @@
             <p>Every itemized quote we produce breaks out stone, engraving, concrete apron / mow strip, freight, sexton coordination, and first-year cleaning. If any of these are missing from a competitor's quote, ask why.</p>
           </div>
 
+          <div class="bg-white rounded-2xl border border-stone-dark p-6">
+            <h2 class="font-serif text-xl font-semibold text-evergreen mb-1">Memorial Style Examples</h2>
+            <p class="text-granite text-sm mb-4">The headstone types referenced in this guide — every style can be customized for your Southern Utah cemetery. Tap any image to enlarge.</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              <button
+                v-for="(img, i) in gallery"
+                :key="img"
+                class="aspect-[4/3] overflow-hidden rounded-xl bg-stone hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-bronze"
+                @click="lightboxIndex = i"
+              >
+                <img :src="img" :alt="`Headstone example ${i + 1}`" class="w-full h-full object-cover" />
+              </button>
+            </div>
+          </div>
+
           <div class="bg-white rounded-2xl border border-stone-dark p-8 prose-custom">
             <h2>6. Funeral home versus buying direct</h2>
             <p>Utah families are not legally required to buy the headstone through the funeral home handling arrangements. Under the FTC Funeral Rule, funeral homes must allow you to supply your own monument without penalty. Buying through the funeral home in Southern Utah typically adds 30–60% in markup on the same stone.</p>
@@ -90,7 +105,7 @@
             <p>We handle the entire process remotely:</p>
             <ul>
               <li>Initial call or email consultation from wherever you are.</li>
-              <li>Digital design proof by email — no cemetery visit required.</li>
+              <li>Digital design layout by email — no cemetery visit required.</li>
               <li>Sexton coordination by phone, on your behalf.</li>
               <li>Freight direct from our fabricator to the cemetery.</li>
               <li>Setting under sexton supervision without you present.</li>
@@ -131,24 +146,56 @@
         <aside class="space-y-6">
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Ready to Start?</h3>
-            <p class="text-white/70 text-sm mb-5">Free consultation. We call the sexton at your Washington County cemetery, verify the current rules, and send a digital design proof at exact scale before any payment is due.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <p class="text-white/70 text-sm mb-5">Free consultation. We call the sexton at your Washington County cemetery, verify the current rules, and send a digital design layout at exact scale before any payment is due.</p>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
 
       </div>
     </section>
+    <Teleport to="body">
+      <div
+        v-if="lightboxIndex !== null"
+        class="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+        @click.self="lightboxIndex = null"
+      >
+        <button class="absolute top-4 right-4 text-white/70 hover:text-white p-2" @click="lightboxIndex = null" aria-label="Close">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <button v-if="lightboxIndex > 0" class="absolute left-4 text-white/70 hover:text-white p-2" @click="lightboxIndex--" aria-label="Previous">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <img :src="gallery[lightboxIndex]" alt="Headstone example" class="max-h-[90vh] max-w-full rounded-lg object-contain" />
+        <button v-if="lightboxIndex < gallery.length - 1" class="absolute right-4 text-white/70 hover:text-white p-2" @click="lightboxIndex++" aria-label="Next">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </Teleport>
   </AppLayout>
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import { Head } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import RelatedLinks from '@/Components/RelatedLinks.vue';
 import { useDesignModal } from '@/composables/useDesignModal.js';
 
 const { openModal } = useDesignModal();
+const lightboxIndex = ref(null);
+
+const gallery = [
+  '/images/products/upright-headstones.jpg',
+  '/images/products/flat-headstone.jpg',
+  '/images/products/slant-headstone.jpg',
+  '/images/products/bevel-headstone.jpg',
+  '/images/products/bronze-headstone.jpg',
+  '/images/products/bench-headstone.jpg',
+  '/images/products/upright-headstones-1.jpg',
+  '/images/products/flat-headstone-1.jpg',
+  '/images/products/slant-headstone-1.jpg',
+];
 
 const related = [
   { label: 'Washington County Pricing Guide', href: '/resources/pricing' },

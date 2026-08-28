@@ -88,6 +88,21 @@
             <p>We include a first maintenance cleaning at the six-month mark on every St. George installation to remove any first-season hard-water spotting from municipal irrigation. That's a real Southern Utah issue: calcium and magnesium in local groundwater leave crusts on granite that are dramatic on lighter stones and near-invisible on jet black. We recommend granite color based on the specific cemetery and section, not on the family's initial preference.</p>
           </div>
 
+
+          <div class="bg-white rounded-2xl border border-stone-dark p-6">
+            <h2 class="font-serif text-xl font-semibold text-evergreen mb-1">Memorial Style Examples</h2>
+            <p class="text-granite text-sm mb-4">Headstone styles we craft for St. George families — verified against local cemetery rules before production. Tap any image to enlarge.</p>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              <button
+                v-for="(img, i) in gallery"
+                :key="img"
+                class="aspect-[4/3] overflow-hidden rounded-xl bg-stone hover:opacity-90 transition-opacity focus:outline-none focus:ring-2 focus:ring-bronze"
+                @click="lightboxIndex = i"
+              >
+                <img :src="img" :alt="`Headstone and monument example for St. George`" class="w-full h-full object-cover" />
+              </button>
+            </div>
+          </div>
           <div class="bg-white rounded-2xl border border-stone-dark p-8">
             <h2 class="font-serif text-2xl font-semibold text-evergreen mb-6">Frequently Asked Questions — St. George</h2>
             <div class="space-y-5">
@@ -104,23 +119,44 @@
           <div class="bg-evergreen rounded-2xl p-6 text-white sticky top-36">
             <h3 class="font-serif text-xl font-semibold mb-3">Design a Headstone for St. George</h3>
             <p class="text-white/70 text-sm mb-5">Free consultation, sexton verification, and a digital proof before any payment is due. We are 15 minutes from every cemetery in the city.</p>
-            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Free Design Proof</button>
+            <button @click="openModal" class="w-full bg-bronze hover:bg-bronze-dark text-white font-semibold py-3 rounded-lg transition-colors text-sm">Request a Quote</button>
           </div>
           <RelatedLinks :links="related" />
         </aside>
 
       </div>
     </section>
+
+    <Teleport to="body">
+      <div
+        v-if="lightboxIndex !== null"
+        class="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+        @click.self="lightboxIndex = null"
+      >
+        <button class="absolute top-4 right-4 text-white/70 hover:text-white p-2" @click="lightboxIndex = null" aria-label="Close">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+        <button v-if="lightboxIndex > 0" class="absolute left-4 text-white/70 hover:text-white p-2" @click="lightboxIndex--" aria-label="Previous">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <img :src="gallery[lightboxIndex]" alt="Memorial style example" class="max-h-[90vh] max-w-full rounded-lg object-contain" />
+        <button v-if="lightboxIndex < gallery.length - 1" class="absolute right-4 text-white/70 hover:text-white p-2" @click="lightboxIndex++" aria-label="Next">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+    </Teleport>
   </AppLayout>
 </template>
 
 <script setup>
+import { ref } from 'vue';
 import { Head, Link } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import RelatedLinks from '@/Components/RelatedLinks.vue';
 import { useDesignModal } from '@/composables/useDesignModal.js';
 
 const { openModal } = useDesignModal();
+const lightboxIndex = ref(null);
 
 const cemeteries = [
   { name: 'St. George City Cemetery', note: 'Historic downtown — pioneer sections + modern additions', href: '/cemeteries/st-george-city-cemetery' },
@@ -149,7 +185,7 @@ const faqs = [
   },
   {
     q: 'How long does a St. George installation take from first call to set stone?',
-    a: 'Typical timeline is 10–18 weeks. Design proof within 5 business days. Manufacturing and freight are the longest step. Because we install year-round, there is no seasonal delay to plan around.',
+    a: 'Typical timeline is 10–18 weeks. Design layout within 5 business days. Manufacturing and freight are the longest step. Because we install year-round, there is no seasonal delay to plan around.',
   },
   {
     q: 'What is the January 2026 fence-removal rule?',
@@ -168,5 +204,13 @@ const related = [
   { label: 'Red Cliffs Temple Engraving', href: '/headstones/red-cliffs-temple-headstones' },
   { label: 'All Washington County Cemeteries', href: '/cemeteries' },
   { label: 'Buying Guide — Southern Utah', href: '/resources/buying-guide' },
+];
+const gallery = [
+  '/images/products/upright-headstones.jpg',
+  '/images/products/upright-headstones-1.jpg',
+  '/images/products/flat-headstone.jpg',
+  '/images/products/slant-headstone.jpg',
+  '/images/products/bronze-headstone.jpg',
+  '/images/products/bevel-headstone.jpg',
 ];
 </script>
