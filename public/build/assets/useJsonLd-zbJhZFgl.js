@@ -1,0 +1,1 @@
+import{C as e,w as t}from"./app-BSW6k5Fa.js";function n(n){let r=null;e(()=>{r=document.createElement(`script`),r.type=`application/ld+json`,r.textContent=JSON.stringify(n),document.head.appendChild(r)}),t(()=>{r?.remove()})}export{n as t};
