@@ -34,25 +34,55 @@
               </div>
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Phone or Email <span class="text-red-500">*</span></label>
-              <input v-model="form.contact" type="text" required class="w-full border-sage rounded-lg text-sm focus:border-evergreen focus:ring-evergreen" placeholder="(435) 254-3122 or email@example.com" />
+              <label class="block text-sm font-medium text-gray-700 mb-1">Email <span class="text-red-500">*</span></label>
+              <input v-model="form.email" type="email" required class="w-full border-sage rounded-lg text-sm focus:border-evergreen focus:ring-evergreen" placeholder="jane@example.com" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+              <input v-model="form.phone" type="tel" class="w-full border-sage rounded-lg text-sm focus:border-evergreen focus:ring-evergreen" placeholder="(435) 555-0100" />
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-1">Cemetery Name</label>
               <input v-model="form.cemetery" type="text" class="w-full border-sage rounded-lg text-sm focus:border-evergreen focus:ring-evergreen" placeholder="e.g. Tonaquint Cemetery, block 3 row 4" />
             </div>
             <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">Is this a veteran memorial?</label>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Type of Memorial</label>
               <select v-model="form.type" class="w-full border-sage rounded-lg text-sm focus:border-evergreen focus:ring-evergreen">
-                <option value="">Not sure / prefer not to say</option>
-                <option value="veteran-sunc">Yes — burial at Southern Utah National Cemetery</option>
-                <option value="veteran-private">Yes — private cemetery, want VA medallion</option>
-                <option value="not-veteran">No</option>
+                <option value="">Select one...</option>
+                <option>Upright Headstone</option>
+                <option>Flat / Flush Marker</option>
+                <option>Slant Marker</option>
+                <option>Bevel Marker</option>
+                <option>Companion / Double Stone</option>
+                <option>Bench Memorial</option>
+                <option>Bronze Marker</option>
+                <option>Infant / Child Memorial</option>
+                <option>Pet Memorial</option>
+                <option>Still Deciding</option>
+                <option>Other</option>
               </select>
             </div>
             <div>
               <label class="block text-sm font-medium text-gray-700 mb-1">How can we help? <span class="text-red-500">*</span></label>
               <textarea v-model="form.message" rows="5" class="w-full border-sage rounded-lg text-sm focus:border-evergreen focus:ring-evergreen" placeholder="Tell us about the loved one, the type of memorial you're considering, any temple engraving preferences (St. George Utah Temple, Red Cliffs Temple), or any questions..." />
+            </div>
+
+            <div class="bg-stone rounded-xl p-4 border" :class="termsError ? 'border-red-300 bg-red-50' : 'border-stone-dark'">
+              <label class="flex items-start gap-3 cursor-pointer">
+                <input
+                  v-model="termsAccepted"
+                  type="checkbox"
+                  class="mt-0.5 h-4 w-4 rounded border-sage text-evergreen focus:ring-evergreen flex-shrink-0"
+                />
+                <span class="text-xs text-granite leading-relaxed">
+                  I have read and agree to the
+                  <a href="/terms-of-service" target="_blank" class="text-evergreen underline hover:text-evergreen-light">Terms of Service</a>
+                  and
+                  <a href="/privacy-policy" target="_blank" class="text-evergreen underline hover:text-evergreen-light">Privacy Policy</a>.
+                  <span class="text-red-500"> *</span>
+                </span>
+              </label>
+              <p v-if="termsError" class="text-red-600 text-xs mt-2 ml-7">Please check the box to continue.</p>
             </div>
 
             <div v-if="submitted" class="bg-evergreen/10 border border-evergreen rounded-lg px-4 py-3 text-evergreen font-medium">
@@ -160,12 +190,19 @@ import AppLayout from '@/Layouts/AppLayout.vue';
 import { useForm } from '@inertiajs/vue3';
 
 const form = useForm({
-  first_name: '', last_name: '', contact: '',
+  first_name: '', last_name: '', email: '', phone: '',
   cemetery: '', type: '', message: '',
 });
 const submitted = ref(false);
+const termsAccepted = ref(false);
+const termsError = ref(false);
 
 function submit() {
+  if (!termsAccepted.value) {
+    termsError.value = true;
+    return;
+  }
+  termsError.value = false;
   form.post(route('leads.store'), {
     preserveScroll: true,
     onSuccess: () => {

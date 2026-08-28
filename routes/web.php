@@ -118,6 +118,10 @@ Route::get('/cemeteries/virgin-city-cemetery', [PageController::class, 'virginCi
 Route::get('/headstones/st-george-temple-headstones', [PageController::class, 'stGeorgeTempleHeadstones'])->name('st-george-temple-headstones');
 Route::get('/headstones/red-cliffs-temple-headstones', [PageController::class, 'redCliffsTempleHeadstones'])->name('red-cliffs-temple-headstones');
 
+// Legal pages
+Route::get('/terms-of-service', [PageController::class, 'termsOfService'])->name('terms');
+Route::get('/privacy-policy', [PageController::class, 'privacyPolicy'])->name('privacy');
+
 // Lead form submission
 Route::post('/leads', [LeadController::class, 'store'])->name('leads.store');
 

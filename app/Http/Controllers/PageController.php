@@ -447,4 +447,14 @@ class PageController extends Controller
     {
         return Inertia::render('Products/RedCliffsTempleHeadstones');
     }
+
+    public function termsOfService(): Response
+    {
+        return Inertia::render('TermsOfService');
+    }
+
+    public function privacyPolicy(): Response
+    {
+        return Inertia::render('PrivacyPolicy');
+    }
 }

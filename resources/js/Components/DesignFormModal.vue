@@ -36,8 +36,13 @@
           </div>
 
           <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1">Phone or Email <span class="text-red-500">*</span></label>
-            <input v-model="form.contact" type="text" required class="w-full border-sage rounded-lg text-sm focus:border-evergreen focus:ring-evergreen" placeholder="(435) 555-0000 or email@example.com" />
+            <label class="block text-sm font-medium text-gray-700 mb-1">Email <span class="text-red-500">*</span></label>
+            <input v-model="form.email" type="email" required class="w-full border-sage rounded-lg text-sm focus:border-evergreen focus:ring-evergreen" placeholder="jane@example.com" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+            <input v-model="form.phone" type="tel" class="w-full border-sage rounded-lg text-sm focus:border-evergreen focus:ring-evergreen" placeholder="(435) 555-0100" />
           </div>
 
           <div>
@@ -49,14 +54,17 @@
             <label class="block text-sm font-medium text-gray-700 mb-1">Type of Memorial</label>
             <select v-model="form.type" class="w-full border-sage rounded-lg text-sm focus:border-evergreen focus:ring-evergreen">
               <option value="">Select one...</option>
-              <option>Upright Monument / Headstone</option>
-              <option>Flat Grave Marker</option>
-              <option>Slant or Bevel Marker</option>
-              <option>Bronze Memorial or Plaque</option>
-              <option>Custom Engraving</option>
-              <option>Cleaning or Restoration</option>
+              <option>Upright Headstone</option>
+              <option>Flat / Flush Marker</option>
+              <option>Slant Marker</option>
+              <option>Bevel Marker</option>
+              <option>Companion / Double Stone</option>
+              <option>Bench Memorial</option>
+              <option>Bronze Marker</option>
+              <option>Infant / Child Memorial</option>
               <option>Pet Memorial</option>
-              <option>Not sure yet</option>
+              <option>Still Deciding</option>
+              <option>Other</option>
             </select>
           </div>
 
@@ -74,8 +82,10 @@
                 class="mt-0.5 h-4 w-4 rounded border-sage text-evergreen focus:ring-evergreen flex-shrink-0"
               />
               <span class="text-xs text-granite leading-relaxed">
-                I understand my contact information will be used to respond to my memorial inquiry.
-                No payment required. No obligation.
+                I have read and agree to the
+                <a href="/terms-of-service" target="_blank" class="text-evergreen underline hover:text-evergreen-light">Terms of Service</a>
+                and
+                <a href="/privacy-policy" target="_blank" class="text-evergreen underline hover:text-evergreen-light">Privacy Policy</a>.
                 <span class="text-red-500"> *</span>
               </span>
             </label>
@@ -111,7 +121,8 @@ const emit = defineEmits(['close']);
 const form = useForm({
   first_name: '',
   last_name: '',
-  contact: '',
+  email: '',
+  phone: '',
   cemetery: '',
   type: '',
   message: '',
