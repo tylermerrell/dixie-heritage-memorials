@@ -117,6 +117,9 @@
           gtag('config', 'G-K1L63B907S');
         </script>
 
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="/st-george-memorials-logo.png">
+
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
