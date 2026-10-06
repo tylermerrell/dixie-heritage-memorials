@@ -33,7 +33,7 @@
               "email": "hello@stgeorgememorials.com",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://stgeorgememorials.com/images/geneva-memorials-logo.png"
+                "url": "https://stgeorgememorials.com/st-george-memorials-logo.png"
               },
               "image": "https://stgeorgememorials.com/images/hero-bg.jpg",
               "address": {

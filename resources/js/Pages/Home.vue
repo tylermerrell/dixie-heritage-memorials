@@ -18,41 +18,117 @@
       <div class="absolute inset-0 bg-gradient-to-br from-evergreen-deeper/70 via-evergreen/50 to-evergreen-dark/60" />
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32">
-        <div class="max-w-3xl">
-          <p class="text-sage-light text-sm font-semibold uppercase tracking-widest mb-4">Southern Utah's Cemetery-Specific Memorial Company</p>
-          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
-            Custom Headstones for Every<br class="hidden sm:block" />
-            <span class="text-sage-light">Washington County Cemetery</span>
-          </h1>
-          <p class="text-lg sm:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl">
-            From Tonaquint to Pine Valley, from the historic pioneer sections of the St. George City Cemetery to the Veterans Memorial at Cedar City's Southern Utah National Cemetery — we know what the sexton will approve before we quote the stone. St. George Utah Temple and Red Cliffs Utah Temple engravings a specialty.
-          </p>
-          <div class="flex flex-col sm:flex-row gap-4">
-            <button
-              @click="openModal"
-              class="inline-flex items-center justify-center gap-2 bg-bronze hover:bg-bronze-dark text-white font-semibold px-8 py-4 rounded-lg transition-colors text-base shadow-lg"
-            >
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536M9 13l6.5-6.5a2.121 2.121 0 013 3L12 16H9v-3z"/></svg>
-              Request a Quote
-            </button>
-            <Link href="/cemeteries" class="inline-flex items-center justify-center gap-2 border border-white/30 hover:border-white/60 text-white font-medium px-8 py-4 rounded-lg transition-colors text-base">
-              Browse Cemetery Guides
-            </Link>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <!-- Left: text -->
+          <div>
+            <p class="text-sage-light text-sm font-semibold uppercase tracking-widest mb-4">Southern Utah's Cemetery-Specific Memorial Company</p>
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight mb-6">
+              Custom Headstones for Every<br class="hidden sm:block" />
+              <span class="text-sage-light">Washington County Cemetery</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl">
+              From Tonaquint to Pine Valley, from the historic pioneer sections of the St. George City Cemetery to the Veterans Memorial at Cedar City's Southern Utah National Cemetery — we know what the sexton will approve before we quote the stone. St. George Utah Temple and Red Cliffs Utah Temple engravings a specialty.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button
+                @click="openModal"
+                class="inline-flex items-center justify-center gap-2 bg-bronze hover:bg-bronze-dark text-white font-semibold px-8 py-4 rounded-lg transition-colors text-base shadow-lg"
+              >
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536M9 13l6.5-6.5a2.121 2.121 0 013 3L12 16H9v-3z"/></svg>
+                Request a Quote
+              </button>
+              <Link href="/cemeteries" class="inline-flex items-center justify-center gap-2 border border-white/30 hover:border-white/60 text-white font-medium px-8 py-4 rounded-lg transition-colors text-base">
+                Browse Cemetery Guides
+              </Link>
+            </div>
+            <div class="flex flex-wrap gap-6 mt-10 text-sm text-white/60">
+              <span class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-bronze" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                Sexton called before we quote
+              </span>
+              <span class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-bronze" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                Free consultation, no obligation
+              </span>
+              <span class="flex items-center gap-2">
+                <svg class="w-4 h-4 text-bronze" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                Year-round install — no winter freeze delays
+              </span>
+            </div>
           </div>
-          <div class="flex flex-wrap gap-6 mt-10 text-sm text-white/60">
-            <span class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-bronze" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-              Sexton called before we quote
-            </span>
-            <span class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-bronze" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-              Free consultation, no obligation
-            </span>
-            <span class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-bronze" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
-              Year-round install — no winter freeze delays
-            </span>
+
+          <!-- Right: image slider (desktop only) -->
+          <div class="hidden lg:block">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl" style="aspect-ratio: 4/3;">
+              <transition-group name="slide-fade" tag="div" class="relative w-full h-full">
+                <img
+                  v-for="(img, i) in heroSliderImages"
+                  v-show="heroSlideIndex === i"
+                  :key="img.src"
+                  :src="img.src"
+                  :alt="img.label"
+                  class="absolute inset-0 w-full h-full object-cover"
+                />
+              </transition-group>
+              <!-- Label -->
+              <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent px-5 py-4">
+                <p class="text-white text-sm font-semibold uppercase tracking-widest">{{ heroSliderImages[heroSlideIndex].label }}</p>
+              </div>
+              <!-- Prev/Next -->
+              <button @click="heroPrev" class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/40 hover:bg-black/60 text-white flex items-center justify-center transition-colors" aria-label="Previous">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+              </button>
+              <button @click="heroNext" class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/40 hover:bg-black/60 text-white flex items-center justify-center transition-colors" aria-label="Next">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              </button>
+              <!-- Dots -->
+              <div class="absolute top-3 right-4 flex gap-1.5">
+                <button
+                  v-for="(img, i) in heroSliderImages"
+                  :key="i"
+                  @click="heroSlideIndex = i"
+                  class="w-2 h-2 rounded-full transition-colors"
+                  :class="heroSlideIndex === i ? 'bg-white' : 'bg-white/40'"
+                  :aria-label="`Go to slide ${i + 1}`"
+                />
+              </div>
+            </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mobile slider (below hero) -->
+    <section class="lg:hidden bg-evergreen-deeper pb-6 px-4">
+      <div class="relative rounded-2xl overflow-hidden shadow-xl" style="aspect-ratio: 4/3;">
+        <transition-group name="slide-fade" tag="div" class="relative w-full h-full">
+          <img
+            v-for="(img, i) in heroSliderImages"
+            v-show="heroSlideIndex === i"
+            :key="img.src"
+            :src="img.src"
+            :alt="img.label"
+            class="absolute inset-0 w-full h-full object-cover"
+          />
+        </transition-group>
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent px-4 py-3">
+          <p class="text-white text-xs font-semibold uppercase tracking-widest">{{ heroSliderImages[heroSlideIndex].label }}</p>
+        </div>
+        <button @click="heroPrev" class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/40 hover:bg-black/60 text-white flex items-center justify-center transition-colors" aria-label="Previous">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <button @click="heroNext" class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-black/40 hover:bg-black/60 text-white flex items-center justify-center transition-colors" aria-label="Next">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+        </button>
+        <div class="absolute top-3 right-4 flex gap-1.5">
+          <button
+            v-for="(img, i) in heroSliderImages"
+            :key="i"
+            @click="heroSlideIndex = i"
+            class="w-2 h-2 rounded-full transition-colors"
+            :class="heroSlideIndex === i ? 'bg-white' : 'bg-white/40'"
+            :aria-label="`Go to slide ${i + 1}`"
+          />
         </div>
       </div>
     </section>
@@ -325,6 +401,7 @@
 </template>
 
 <script setup>
+import { ref, onMounted, onUnmounted } from 'vue';
 import { Head, Link } from '@inertiajs/vue3';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import { useDesignModal } from '@/composables/useDesignModal.js';
@@ -360,6 +437,25 @@ useJsonLd({
 });
 
 const { openModal } = useDesignModal();
+
+const heroSliderImages = [
+  { src: '/images/products/upright-headstones-1.png',  label: 'Upright Headstones' },
+  { src: '/images/products/slant-headstone.png',        label: 'Slant Markers' },
+  { src: '/images/products/bench-headstone.png',        label: 'Bench Memorials' },
+  { src: '/images/products/bronze-headstone.png',       label: 'Bronze Markers' },
+  { src: '/images/products/upright-headstones-6.png',  label: 'Companion Stones' },
+  { src: '/images/products/bevel-headstone.png',        label: 'Bevel Markers' },
+  { src: '/images/products/upright-headstone-20.jpg',  label: 'Custom Uprights' },
+];
+
+const heroSlideIndex = ref(0);
+
+const heroNext = () => { heroSlideIndex.value = (heroSlideIndex.value + 1) % heroSliderImages.length; };
+const heroPrev = () => { heroSlideIndex.value = (heroSlideIndex.value - 1 + heroSliderImages.length) % heroSliderImages.length; };
+
+let autoplayTimer;
+onMounted(() => { autoplayTimer = setInterval(heroNext, 4000); });
+onUnmounted(() => { clearInterval(autoplayTimer); });
 
 const steps = [
   {
