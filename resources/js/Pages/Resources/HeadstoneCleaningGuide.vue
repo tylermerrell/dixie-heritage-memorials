@@ -124,6 +124,10 @@
               <svg class="w-4 h-4 text-bronze flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
               Headstone FAQ
             </Link>
+            <Link href="/resources/adding-date-to-existing-headstone" class="flex items-center gap-2 text-sm text-granite hover:text-evergreen transition-colors">
+              <svg class="w-4 h-4 text-bronze flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              Adding a Date or Inscription
+            </Link>
           </div>
         </aside>
 

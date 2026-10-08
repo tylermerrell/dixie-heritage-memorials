@@ -62,7 +62,7 @@
             <ul>
               <li><strong>Single stone or two stones.</strong> A companion monument is one wide stone spanning both plots. Some couples prefer two separate stones, side by side, with individual designs. The cemetery's rules for the specific plots determine which configurations are permitted — we verify before suggesting either.</li>
               <li><strong>Layout of names and dates.</strong> Most companion stones show the husband's name on the left and wife's name on the right, each with birth date and a blank space for the death date. Some couples prefer a single shared epitaph in the center with names flanking it. We provide design options and you choose.</li>
-              <li><strong>What happens at the first death.</strong> When the first spouse passes, we return to the stone (or arrange for it to be returned to the fabricator if the addition is complex) and engrave the death date. The setting fee for this return visit is included in our pre-planned pricing.</li>
+              <li><strong>What happens at the first death.</strong> When the first spouse passes, we return to the stone (or arrange for it to be returned to the fabricator if the addition is complex) and <a href="/resources/adding-date-to-existing-headstone" class="text-bronze font-medium underline hover:text-evergreen transition-colors">engrave the death date</a>. The setting fee for this return visit is included in our pre-planned pricing.</li>
               <li><strong>Temple engravings for companion stones.</strong> We frequently design companion stones with both the St. George Utah Temple and the Red Cliffs Utah Temple on a single stone — one temple for each generation's endowment home. This is one of the most meaningful design choices available to Southern Utah Latter-day Saint families right now.</li>
             </ul>
             <p><a href="/headstones/companion-headstones" class="text-bronze font-medium underline hover:text-evergreen transition-colors">See our companion headstones page</a> for design examples and more detail on the ordering process.</p>
@@ -106,6 +106,14 @@
             <Link href="/resources/pricing" class="flex items-center gap-2 text-sm text-granite hover:text-evergreen transition-colors">
               <svg class="w-4 h-4 text-bronze flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
               Pricing Guide
+            </Link>
+            <Link href="/resources/lds-headstone-symbols" class="flex items-center gap-2 text-sm text-granite hover:text-evergreen transition-colors">
+              <svg class="w-4 h-4 text-bronze flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              LDS Headstone Symbols
+            </Link>
+            <Link href="/resources/adding-date-to-existing-headstone" class="flex items-center gap-2 text-sm text-granite hover:text-evergreen transition-colors">
+              <svg class="w-4 h-4 text-bronze flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              Adding Dates Later
             </Link>
           </div>
         </aside>

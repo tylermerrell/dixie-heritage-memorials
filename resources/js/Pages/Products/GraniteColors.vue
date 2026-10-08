@@ -56,6 +56,7 @@
           <p><strong class="text-evergreen">Georgia Gray</strong> is the most commonly requested mid-tone color in Washington County. It holds a polished finish well, photographs clearly in bright sun, and complements the red-rock landscape without competing with it.</p>
           <p><strong class="text-evergreen">Red and rose granites</strong> — India Red, Mahogany, Mountain Rose — are a natural fit for Southern Utah. The warm tones echo the regional geology and age gracefully in the desert environment. They are particularly popular at Tonaquint and in newer sections of Ivins City Cemetery.</p>
           <p>We do not recommend marble for any Southern Utah cemetery. Marble is soft enough that our hard water and UV levels cause visible surface degradation within a few years. If a competitor quotes marble for a St. George plot, ask why.</p>
+          <p>For more on keeping any granite color looking its best in Southern Utah's climate, see our <a href="/resources/headstone-cleaning-guide" class="text-bronze font-medium underline hover:text-evergreen transition-colors">headstone cleaning guide</a> — including why you should never use vinegar or CLR on polished granite.</p>
         </div>
       </div>
     </section>

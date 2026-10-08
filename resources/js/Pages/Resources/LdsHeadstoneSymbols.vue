@@ -33,7 +33,7 @@
 
             <h3>Red Cliffs Utah Temple (dedicated 2024)</h3>
             <p>The Red Cliffs Utah Temple was dedicated in November 2024 — the second temple in Washington County and the first modern temple built specifically for a community whose identity is rooted in the Cotton Mission pioneer era. Its design features a contemporary form with a distinctive cottonwood-leaf motif on the exterior, reflecting the riparian landscape of the Virgin River corridor.</p>
-            <p>On headstones, the Red Cliffs Temple silhouette is newer and still being established as a cultural marker — but it is already appearing regularly, particularly for younger Washington County families endowed after 2024. Companion monuments combining both the St. George Temple (for older family members) and the Red Cliffs Temple (for the next generation) on a single stone are becoming one of our most-requested designs. <a href="/headstones/red-cliffs-temple-headstones" class="text-bronze font-medium underline hover:text-evergreen transition-colors">See our Red Cliffs Temple engraving gallery.</a></p>
+            <p>On headstones, the Red Cliffs Temple silhouette is newer and still being established as a cultural marker — but it is already appearing regularly, particularly for younger Washington County families endowed after 2024. <a href="/resources/pre-planning-headstone" class="text-bronze font-medium underline hover:text-evergreen transition-colors">Companion monuments</a> combining both the St. George Temple (for older family members) and the Red Cliffs Temple (for the next generation) on a single stone are becoming one of our most-requested designs. <a href="/headstones/red-cliffs-temple-headstones" class="text-bronze font-medium underline hover:text-evergreen transition-colors">See our Red Cliffs Temple engraving gallery.</a></p>
           </div>
 
           <div class="bg-white rounded-2xl border border-stone-dark p-8 prose-custom">
@@ -107,6 +107,14 @@
             <Link href="/headstones/custom-engraving" class="flex items-center gap-2 text-sm text-granite hover:text-evergreen transition-colors">
               <svg class="w-4 h-4 text-bronze flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
               Custom Engraving Options
+            </Link>
+            <Link href="/resources/pre-planning-headstone" class="flex items-center gap-2 text-sm text-granite hover:text-evergreen transition-colors">
+              <svg class="w-4 h-4 text-bronze flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              Pre-Planning Guide
+            </Link>
+            <Link href="/resources/adding-date-to-existing-headstone" class="flex items-center gap-2 text-sm text-granite hover:text-evergreen transition-colors">
+              <svg class="w-4 h-4 text-bronze flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              Adding Inscriptions
             </Link>
           </div>
         </aside>

@@ -30,7 +30,7 @@
               <li><strong>Spouse's name and dates</strong> on a single monument being converted to a companion after the second death.</li>
               <li><strong>Epitaph or scripture</strong> not included in the original design.</li>
               <li><strong>Military insignia or branch emblem</strong> for a veteran's existing stone.</li>
-              <li><strong>LDS temple silhouette</strong> added to a stone that was originally ordered without one.</li>
+              <li><strong><a href="/resources/lds-headstone-symbols" class="text-bronze font-medium underline hover:text-evergreen transition-colors">LDS temple silhouette</a></strong> added to a stone that was originally ordered without one.</li>
               <li><strong>Photograph medallion</strong> — a ceramic or bronze portrait disk mounted in a pre-drilled recess.</li>
               <li><strong>Correction or re-engraving</strong> over an error in the original lettering.</li>
             </ul>
@@ -113,6 +113,14 @@
             <Link href="/resources/buying-guide" class="flex items-center gap-2 text-sm text-granite hover:text-evergreen transition-colors">
               <svg class="w-4 h-4 text-bronze flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
               Buying Guide
+            </Link>
+            <Link href="/resources/pre-planning-headstone" class="flex items-center gap-2 text-sm text-granite hover:text-evergreen transition-colors">
+              <svg class="w-4 h-4 text-bronze flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              Pre-Planning Guide
+            </Link>
+            <Link href="/resources/lds-headstone-symbols" class="flex items-center gap-2 text-sm text-granite hover:text-evergreen transition-colors">
+              <svg class="w-4 h-4 text-bronze flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              LDS Headstone Symbols
             </Link>
           </div>
         </aside>
