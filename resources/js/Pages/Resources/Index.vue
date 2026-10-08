@@ -68,7 +68,7 @@ const categories = [
     description: 'Start here. The end-to-end process of buying a headstone in Washington County — including snowbird / out-of-state coordination.',
     articles: [
       { slug: 'buying-guide', href: '/resources/buying-guide', title: 'Guide to Buying a Headstone in Southern Utah', desc: 'End-to-end: cemetery rules, granite selection for the desert climate, ordering timeline (Southern Utah is a year-round install market), and what to expect after installation.' },
-      { slug: 'snowbird-pre-need-headstone-planning-st-george', href: '#', status: 'Coming soon', title: 'Pre-Need Headstone Planning for St. George Snowbirds', desc: 'Part-year residents split between St. George and home states face specific coordination challenges. How to plan a memorial from anywhere.' },
+      { slug: 'pre-planning-headstone', href: '/resources/pre-planning-headstone', title: 'Pre-Planning Your Headstone in Southern Utah', desc: 'Companion monument planning, pricing locks, and remote coordination for snowbird families and couples who want to design the memorial together while both are living.' },
       { slug: 'how-to-order-a-headstone-from-out-of-state', href: '#', status: 'Coming soon', title: 'How to Order a Headstone in Utah From Out of State', desc: 'Remote design, sexton coordination by phone, freight direct to cemetery. Complete process for families ordering from another state.' },
     ],
   },
@@ -88,7 +88,8 @@ const categories = [
     articles: [
       { slug: 'st-george-utah-temple-headstone-engraving-guide', href: '/headstones/st-george-temple-headstones', title: 'Engraving the St. George Utah Temple on a Headstone', desc: 'The 1877 castellated silhouette in four design variations. Which granite colors carry the etch. Sizing for each Washington County cemetery.' },
       { slug: 'red-cliffs-utah-temple-headstone-engraving-guide', href: '/headstones/red-cliffs-temple-headstones', title: 'Engraving the Red Cliffs Utah Temple on a Headstone', desc: 'The 2024 contemporary silhouette with cottonwood-leaf motif. Design variations for a temple only two years old, so no other monument company has content on it yet.' },
-      { slug: 'lds-pioneer-headstone-symbols-southern-utah', href: '#', status: 'Coming soon', title: 'LDS Pioneer Headstone Symbols — Southern Utah', desc: 'Beehive, sego lily, sea gull, cottonwood leaf, handcart. Cotton Mission heritage motifs and how they translate to modern engraving.' },
+      { slug: 'lds-headstone-symbols', href: '/resources/lds-headstone-symbols', title: 'LDS Headstone Symbols & Their Meaning', desc: 'St. George Utah Temple, Red Cliffs Temple, sego lily, beehive, sea gull, handcart, Angel Moroni — what each means and how Washington County families use them on grave markers.' },
+      { slug: 'adding-date-to-existing-headstone', href: '/resources/adding-date-to-existing-headstone', title: 'Adding a Date or Inscription to an Existing Headstone', desc: 'On-site engraving process, cemetery permit requirements by specific cemetery, cost ranges, and what to prepare when contacting us about an existing Southern Utah monument.' },
       { slug: 'custom-headstone-designs-inspired-by-red-rock-landscape', href: '#', status: 'Coming soon', title: 'Custom Designs Inspired by the Red Rock Landscape', desc: 'Snow Canyon and Zion silhouettes, Dakota Mahogany granite pairings, and integrating landscape imagery with temple or portrait engravings.' },
       { slug: 'epitaph-ideas-for-southern-utah-families', href: '#', status: 'Coming soon', title: 'Epitaph Ideas for Southern Utah Families', desc: 'Pioneer heritage, scripture, personal voice. Curated examples for LDS, Christian, veteran, and secular Southern Utah families.' },
     ],
@@ -98,7 +99,7 @@ const categories = [
     description: 'The Southern Utah National Cemetery opened in Cedar City in September 2025. This changed the veteran memorial landscape for the entire five-county region.',
     articles: [
       { slug: 'southern-utah-national-cemetery-headstone-guide', href: '/cemeteries/southern-utah-national-cemetery', title: 'Southern Utah National Cemetery: A Family\'s Guide', desc: 'Eligibility, VA-issued markers vs. private headstone with medallion, application forms (40-10007, 40-1330, 40-1330M), and how to coordinate a memorial from St. George.' },
-      { slug: 'veteran-headstone-benefits-southern-utah-2026', href: '#', status: 'Coming soon', title: 'VA Headstones and Veteran Memorial Benefits in Southern Utah', desc: 'Everything a family needs to know about the VA marker program for 2026 — eligibility, forms, timelines, and what the VA provides at no cost.' },
+      { slug: 'veteran-headstone-guide', href: '/resources/veteran-headstone-guide', title: 'Veteran Headstone Guide — Free VA Markers & Southern Utah National Cemetery', desc: 'The two paths for veteran families: free VA marker at SUNC in Cedar City, or private headstone with VA medallion at any cemetery. Honest tradeoffs, both forms explained.' },
       { slug: 'bronze-va-marker-vs-granite-headstone', href: '#', status: 'Coming soon', title: 'Bronze VA Marker vs. Granite Headstone', desc: 'Cost, longevity, and design flexibility comparison for Southern Utah veterans deciding between the free VA marker and a private stone with medallion.' },
     ],
   },
@@ -115,7 +116,7 @@ const categories = [
     title: 'Cleaning & Maintenance',
     description: 'Southern Utah\'s desert climate is punishing for stone. Hard water, red-rock dust, and 300+ sunny days a year create maintenance patterns unique to our region.',
     articles: [
-      { slug: 'how-to-clean-hard-water-off-a-headstone-in-southern-utah', href: '#', status: 'Coming soon', title: 'How to Clean Hard Water Stains Off a Headstone in Southern Utah', desc: 'Long-form pillar. Southern Utah water chemistry. Non-ionic cleaner protocol. Why never to use vinegar or household descalers on polished granite.' },
+      { slug: 'headstone-cleaning-guide', href: '/resources/headstone-cleaning-guide', title: 'How to Clean a Headstone in Southern Utah', desc: 'Southern Utah water chemistry. Non-ionic cleaner protocol. Why never to use vinegar, CLR, or household descalers on polished granite — and what actually works.' },
       { slug: 'granite-colors-southern-utah-uv-and-dust', href: '#', status: 'Coming soon', title: 'Granite Colors for Headstones in Southern Utah', desc: 'UV, dust, and hard-water performance by granite color. Why jet black outperforms marble in the desert and why some competitors quote what they shouldn\'t.' },
       { slug: 'pioneer-sandstone-marker-restoration-southern-utah', href: '#', status: 'Coming soon', title: 'Restoring Pioneer Sandstone Grave Markers', desc: 'Southern Utah has more surviving pioneer sandstone markers than any other region of the state. When to restore vs. reset, and how we handle it.' },
     ],

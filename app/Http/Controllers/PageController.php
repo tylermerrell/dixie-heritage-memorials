@@ -110,6 +110,11 @@ class PageController extends Controller
         return Inertia::render('Products/Restoration');
     }
 
+    public function graniteColors(): Response
+    {
+        return Inertia::render('Products/GraniteColors');
+    }
+
     // Service area pages
     public function serviceAreas(): Response
     {
@@ -245,6 +250,31 @@ class PageController extends Controller
     public function monumentCompaniesSouthernUtah(): Response
     {
         return Inertia::render('Resources/MonumentCompanies');
+    }
+
+    public function headstoneCleaningGuide(): Response
+    {
+        return Inertia::render('Resources/HeadstoneCleaningGuide');
+    }
+
+    public function addingDateToHeadstone(): Response
+    {
+        return Inertia::render('Resources/AddingDateToHeadstone');
+    }
+
+    public function ldsHeadstoneSymbols(): Response
+    {
+        return Inertia::render('Resources/LdsHeadstoneSymbols');
+    }
+
+    public function veteranHeadstoneGuide(): Response
+    {
+        return Inertia::render('Resources/VeteranHeadstoneGuide');
+    }
+
+    public function prePlanningHeadstone(): Response
+    {
+        return Inertia::render('Resources/PrePlanningHeadstone');
     }
 
     // Cemetery hub + spokes

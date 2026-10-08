@@ -30,6 +30,7 @@ Route::get('/headstones/civic-monuments', [PageController::class, 'civicMonument
 Route::get('/headstones/unique-options', [PageController::class, 'uniqueOptions'])->name('unique-options');
 Route::get('/headstones/custom-engraving', [PageController::class, 'customEngraving'])->name('custom-engraving');
 Route::get('/headstones/restoration', [PageController::class, 'restoration'])->name('restoration');
+Route::get('/headstones/granite-colors', [PageController::class, 'graniteColors'])->name('granite-colors');
 
 // Service area index
 Route::get('/service-areas', [PageController::class, 'serviceAreas'])->name('service-areas');
@@ -67,6 +68,11 @@ Route::get('/resources/buying-guide', [PageController::class, 'buyingGuide'])->n
 Route::get('/resources/pricing', [PageController::class, 'pricing'])->name('pricing');
 Route::get('/resources/faq', [PageController::class, 'faq'])->name('faq');
 Route::get('/resources/monument-companies-southern-utah', [PageController::class, 'monumentCompaniesSouthernUtah'])->name('monument-companies-southern-utah');
+Route::get('/resources/headstone-cleaning-guide', [PageController::class, 'headstoneCleaningGuide'])->name('headstone-cleaning-guide');
+Route::get('/resources/adding-date-to-existing-headstone', [PageController::class, 'addingDateToHeadstone'])->name('adding-date-to-headstone');
+Route::get('/resources/lds-headstone-symbols', [PageController::class, 'ldsHeadstoneSymbols'])->name('lds-headstone-symbols');
+Route::get('/resources/veteran-headstone-guide', [PageController::class, 'veteranHeadstoneGuide'])->name('veteran-headstone-guide');
+Route::get('/resources/pre-planning-headstone', [PageController::class, 'prePlanningHeadstone'])->name('pre-planning-headstone');
 
 // Cemetery hub + spokes
 Route::get('/cemeteries', [PageController::class, 'cemeteries'])->name('cemeteries');

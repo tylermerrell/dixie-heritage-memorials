@@ -232,6 +232,42 @@
       </div>
     </section>
 
+    <!-- Granite Colors -->
+    <section class="py-20 bg-stone">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10">
+          <p class="text-bronze text-sm font-semibold uppercase tracking-widest mb-3">Stone Selection</p>
+          <h2 class="font-serif text-3xl font-semibold text-evergreen mb-3">Available Granite Colors</h2>
+          <p class="text-granite max-w-xl mx-auto">Every granite color we offer is hand-selected for durability in Southern Utah's high-desert climate — UV resistance, hard-water stain resistance, and long-term polish retention.</p>
+        </div>
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+          <Link
+            v-for="color in graniteColors"
+            :key="color.name"
+            href="/headstones/granite-colors"
+            class="group bg-white rounded-2xl border border-stone-dark overflow-hidden shadow-sm hover:shadow-md hover:border-evergreen transition-all"
+          >
+            <div class="h-36 overflow-hidden bg-slate-200">
+              <img
+                :src="color.image"
+                :alt="color.name + ' granite'"
+                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+            <div class="px-4 py-3 text-center">
+              <p class="font-semibold text-evergreen text-sm">{{ color.name }}</p>
+            </div>
+          </Link>
+        </div>
+        <div class="text-center mt-8">
+          <Link href="/headstones/granite-colors" class="inline-flex items-center gap-2 text-evergreen font-semibold hover:text-evergreen-light transition-colors">
+            View All Granite Colors
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </Link>
+        </div>
+      </div>
+    </section>
+
     <!-- Two temples specialty -->
     <section class="py-20 bg-evergreen text-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -570,6 +606,14 @@ const heritageDesigns = [
   'Sea gull (Utah state bird)',
   'Handcart heritage designs',
   'Cottonwood-leaf motif',
+];
+
+const graniteColors = [
+  { name: 'Georgia Gray',  image: '/images/granite-colors/georgia-gray.jpg' },
+  { name: 'Jet Black',     image: '/images/granite-colors/jet-black.jpg' },
+  { name: 'Mahogany',      image: '/images/granite-colors/mahogany.jpg' },
+  { name: 'India Red',     image: '/images/granite-colors/india-red.jpg' },
+  { name: 'Mountain Rose', image: '/images/granite-colors/mountain-rose.jpg' },
 ];
 
 const featuredCemeteries = [
